@@ -1,0 +1,100 @@
+{{> header}}
+
+<div class="ui breadcrumb">
+  <div class="active section">Home</div>
+</div>
+
+<div class="ui message">
+  <div class="header">
+    <a href="https://github.com/Macro-swift/MacroExpress"
+       target="ext">Macro.swift</a>
+  </div>
+  <p>
+    Macro is a very small
+    Node.js/<a href="https://expressjs.com" target="ext">Express.js</a>
+    inspired framework for
+    <a href="https://www.swift.org" target="ext">Swift</a>.
+  </p>
+</div>
+
+<p class="ui">
+  This is a Lighter.swift server side example demonstrating two things:
+  <ul class="list">
+    <li>Directly mapping
+        <a href="https://www.sqlite.org/index.html" target="ext">SQLite</a>
+        table records to JSON APIs using
+        <a href="https://developer.apple.com/documentation/swift/codable"
+           target="ext">Codable</a>.</li>
+    <li>Using
+        <a href="https://www.sqlite.org/index.html" target="ext">SQLite</a>
+        table records in
+        <a href="http://mustache.github.io" target="ext">Mustache</a>
+        templates for rendering.</li>
+  </ul>
+</p>
+
+
+<h2 class="ui header">Example Endpoints</h2>
+
+<div class="ui bulleted list">
+  <a class="item" href="/products.html">Products HTML Page</a>
+  <a class="item" href="/api/products" >Products JSON Endpoint</a>
+</div>
+
+
+<h2 class="ui header">Server Setup</h2>
+
+Starting a server is easy, and if
+<a href="https://github.com/mxcl/swift-sh" target="ext">swift-sh</a>
+is installed, doesn't even require a Swift Package Manager setup:
+
+<pre><code class="language-swift"
+>#!/usr/bin/swift sh
+import MacroExpress // @Macro-swift
+import Northwind    // @Lighter-swift/NorthwindSQLite.swift
+
+let db  = Northwind.module!
+let app = express()
+
+app
+  .get("/products") { _, res, _ in
+    res.send(try db.products.fetch())
+  }
+  .listen(1337)
+</code></pre>
+
+The products can then be retrieved using
+<pre><code class="language-sh"
+>curl http://localhost:1337/api/products | jq .</code></pre>
+
+Which will return JSON for the products:
+<pre><code class="language-json"
+>[
+  {
+    "categoryID": 1,
+    "discontinued": "0",
+    "id": 1,
+    "productName": "Chai",
+    "quantityPerUnit": "10 boxes x 20 bags",
+    "reorderLevel": 10,
+    "supplierID": 1,
+    "unitPrice": "18",
+    "unitsInStock": 39,
+    "unitsOnOrder": 0
+  },
+  {
+    "categoryID": 1,
+    "discontinued": "0",
+    "id": 2,
+    "productName": "Chang",
+    "quantityPerUnit": "24 - 12 oz bottles",
+    "reorderLevel": 25,
+    "supplierID": 1,
+    "unitPrice": "19",
+    "unitsInStock": 17,
+    "unitsOnOrder": 40
+  },
+  ...
+]</code></pre>
+
+{{> footer}}
