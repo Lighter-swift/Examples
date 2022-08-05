@@ -13,7 +13,7 @@ func products(req: IncomingMessage, res: ServerResponse, next: Next) throws {
   // This asks lighter to fetch all product infos we have.
   // Note: Xcode allows an option-click on "Products" to show information about
   //       the type, or control-click to jump to the code.
-  let products : [ Products ] = try db.products.fetch(limit: limit)
+  let products : [ Product ] = try db.products.fetch(limit: limit)
   res.log.log("Fetched: #\(products.count) products!")
   
   
