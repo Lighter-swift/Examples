@@ -1,0 +1,59 @@
+{{> header}}
+
+<div class="ui breadcrumb">
+  <a class="section" href="../">Home</a>
+  <div class="divider"> / </div>
+  <div class="active section">Products</div>
+</div>
+
+<div class="ui message">
+  <div class="header">
+    Products Page
+  </div>
+  <p>
+    A small example page showing the fetched products in a list.
+  </p>
+</div>
+
+<table class="ui celled striped table">
+  <thead>
+    <tr><th colspan="4">Products</th></tr>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th class="right aligned">Quantity per Unit</th>
+      <th class="right aligned">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <!-- Here we loop over the "products" array passed in by the route
+         handler -->
+    {{#products}}
+      <tr>
+        <td class="collapsing">
+          <i class="key icon"></i> {{id}} <!-- access the record properties -->
+        </td>
+        <td>
+          <a href="products/{{id}}">{{productName}}</a>
+        </td>
+        <td class="right aligned collapsing">${{quantityPerUnit}}</td>
+        <td class="right aligned collapsing">${{unitPrice}}</td>
+      </tr>
+    {{/products}}
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <th colspan="4" align="right">
+        <div class="ui tiny buttons">
+          <a href="?limit={{higherLimit}}" class="ui button">More</a>
+          <div class="or"></div>
+          <a href="?limit={{lowerLimit}}" class="ui button">Less</a>
+        </div
+      </th>
+    </tr>
+  </tfood>
+</table>
+
+{{> footer}}
