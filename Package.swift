@@ -28,7 +28,8 @@ var package = Package(
       dependencies: [
         .product(name: "Northwind", package: "NorthwindSQLite.swift"),
         "MacroExpress"
-      ]
+      ],
+      exclude: [ "views" ]
     )
   ]
 )

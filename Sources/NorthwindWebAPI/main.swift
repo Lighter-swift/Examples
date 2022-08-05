@@ -5,7 +5,7 @@ import Northwind    // @Lighter-swift/NorthwindSQLite.swift
 
 dotenv.config()
 
-let db  = Northwind.module!
+let db  = Northwind.module! // This grabs the read-only DB embedded in the pkg
 let app = express()
 
 app.use(logger("dev"))
