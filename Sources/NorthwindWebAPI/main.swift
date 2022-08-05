@@ -16,11 +16,18 @@ app.set("views", __dirname() + "/views")
 
 // MARK: - Setup Routes
 
+// This is an explicit registration for a specific record fetch.
 // curl http://localhost:1337/api/products | jq .
 app.get("/api/products") { _, res, _ in
   res.send(try db.products.fetch())
 }
 
+// But w/ 5.7+ we can also dynamically register the typesafe handlers.
+// curl http://localhost:1337/api/Supplier | jq .
+app.get(db, prefix: "/api/")
+
+
+// Those hook up the HTML pages/templates.
 app
   .get("/products.html", products)
   .get("/products/:id/",  product)
