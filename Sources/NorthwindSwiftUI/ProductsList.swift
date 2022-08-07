@@ -18,7 +18,9 @@ struct ProductsList: View {
   var body: some View {
     List {
       ForEach(products) { product in
-        NavigationLink(destination: ProductPage(snapshot: product),
+        NavigationLink(destination:
+                        ProductPage(snapshot: product)
+                          .navigationTitle(product.productName),
                        tag: product.id, selection: $selectedProduct)
         {
           ProductCell(product: product)
@@ -47,5 +49,10 @@ struct ProductsList: View {
         print("Fetch failed:", error)
       }
     }
+    
+    // Doesn't update without? (i.e. the one attached to the item is ignored)
+    .navigationTitle(selectedProduct.flatMap { selectedID in
+      products.first { $0.id == selectedID }?.productName
+    } ?? "Products")
   }
 }
