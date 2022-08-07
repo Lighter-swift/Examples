@@ -11,6 +11,11 @@
 		E8224FB828A0065C00246A1F /* AttachDatabaseRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8224FAD28A0065C00246A1F /* AttachDatabaseRoutes.swift */; };
 		E8224FB928A0065C00246A1F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8224FAE28A0065C00246A1F /* main.swift */; };
 		E8224FBE28A0066800246A1F /* WebDependencies in Frameworks */ = {isa = PBXBuildFile; productRef = E8224FBD28A0066800246A1F /* WebDependencies */; };
+		E8224FCA28A0071100246A1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8224FC928A0071100246A1F /* Assets.xcassets */; };
+		E8224FCE28A0071100246A1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8224FCD28A0071100246A1F /* Preview Assets.xcassets */; };
+		E8224FD528A0073000246A1F /* NorthwindSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8224FD328A0073000246A1F /* NorthwindSwiftUIApp.swift */; };
+		E8224FD628A0073000246A1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8224FD428A0073000246A1F /* ContentView.swift */; };
+		E8224FDA28A0076E00246A1F /* AppDependencies in Frameworks */ = {isa = PBXBuildFile; productRef = E8224FD928A0076E00246A1F /* AppDependencies */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +44,12 @@
 		E8224FB428A0065C00246A1F /* header.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = header.mustache; sourceTree = "<group>"; };
 		E8224FB528A0065C00246A1F /* footer.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = footer.mustache; sourceTree = "<group>"; };
 		E8224FB628A0065C00246A1F /* category-details.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "category-details.mustache"; sourceTree = "<group>"; };
+		E8224FC328A0071000246A1F /* NorthwindSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NorthwindSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8224FC928A0071100246A1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8224FCB28A0071100246A1F /* NorthwindSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NorthwindSwiftUI.entitlements; sourceTree = "<group>"; };
+		E8224FCD28A0071100246A1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E8224FD328A0073000246A1F /* NorthwindSwiftUIApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NorthwindSwiftUIApp.swift; sourceTree = "<group>"; };
+		E8224FD428A0073000246A1F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +61,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8224FC028A0071000246A1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8224FDA28A0076E00246A1F /* AppDependencies in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -57,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				E8224F9E28A0061600246A1F /* Sources */,
+				E8224FC428A0071000246A1F /* NorthwindSwiftUI */,
 				E8224F9D28A0060F00246A1F /* AppLogic */,
 				E8224F8C28A005CF00246A1F /* Products */,
 				E8224FBC28A0066800246A1F /* Frameworks */,
@@ -67,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				E8224FA328A0063A00246A1F /* NorthwindWebAPI */,
+				E8224FC328A0071000246A1F /* NorthwindSwiftUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,6 +95,7 @@
 		E8224F9E28A0061600246A1F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E8224FD228A0073000246A1F /* NorthwindSwiftUI */,
 				E8224FAA28A0065C00246A1F /* NorthwindWebAPI */,
 			);
 			name = Sources;
@@ -113,6 +135,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E8224FC428A0071000246A1F /* NorthwindSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				E8224FC928A0071100246A1F /* Assets.xcassets */,
+				E8224FCB28A0071100246A1F /* NorthwindSwiftUI.entitlements */,
+				E8224FCC28A0071100246A1F /* Preview Content */,
+			);
+			path = NorthwindSwiftUI;
+			sourceTree = "<group>";
+		};
+		E8224FCC28A0071100246A1F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E8224FCD28A0071100246A1F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E8224FD228A0073000246A1F /* NorthwindSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				E8224FD328A0073000246A1F /* NorthwindSwiftUIApp.swift */,
+				E8224FD428A0073000246A1F /* ContentView.swift */,
+			);
+			name = NorthwindSwiftUI;
+			path = Sources/NorthwindSwiftUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +187,27 @@
 			productReference = E8224FA328A0063A00246A1F /* NorthwindWebAPI */;
 			productType = "com.apple.product-type.tool";
 		};
+		E8224FC228A0071000246A1F /* NorthwindSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8224FCF28A0071100246A1F /* Build configuration list for PBXNativeTarget "NorthwindSwiftUI" */;
+			buildPhases = (
+				E8224FBF28A0071000246A1F /* Sources */,
+				E8224FC028A0071000246A1F /* Frameworks */,
+				E8224FC128A0071000246A1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8224FD828A0076900246A1F /* PBXTargetDependency */,
+			);
+			name = NorthwindSwiftUI;
+			packageProductDependencies = (
+				E8224FD928A0076E00246A1F /* AppDependencies */,
+			);
+			productName = NorthwindSwiftUI;
+			productReference = E8224FC328A0071000246A1F /* NorthwindSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -148,6 +219,9 @@
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					E8224FA228A0063A00246A1F = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					E8224FC228A0071000246A1F = {
 						CreatedOnToolsVersion = 14.0;
 					};
 				};
@@ -166,9 +240,22 @@
 			projectRoot = "";
 			targets = (
 				E8224FA228A0063A00246A1F /* NorthwindWebAPI */,
+				E8224FC228A0071000246A1F /* NorthwindSwiftUI */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8224FC128A0071000246A1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8224FCE28A0071100246A1F /* Preview Assets.xcassets in Resources */,
+				E8224FCA28A0071100246A1F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E8224F9F28A0063A00246A1F /* Sources */ = {
@@ -181,12 +268,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8224FBF28A0071000246A1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8224FD628A0073000246A1F /* ContentView.swift in Sources */,
+				E8224FD528A0073000246A1F /* NorthwindSwiftUIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		E8224FBB28A0066300246A1F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = E8224FBA28A0066300246A1F /* WebDependencies */;
+		};
+		E8224FD828A0076900246A1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = E8224FD728A0076900246A1F /* AppDependencies */;
 		};
 /* End PBXTargetDependency section */
 
@@ -322,6 +422,78 @@
 			};
 			name = Release;
 		};
+		E8224FD028A0071100246A1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NorthwindSwiftUI/NorthwindSwiftUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NorthwindSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.zeezide.lighter.NorthwindSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8224FD128A0071100246A1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NorthwindSwiftUI/NorthwindSwiftUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NorthwindSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.zeezide.lighter.NorthwindSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -343,6 +515,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		E8224FCF28A0071100246A1F /* Build configuration list for PBXNativeTarget "NorthwindSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8224FD028A0071100246A1F /* Debug */,
+				E8224FD128A0071100246A1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -353,6 +534,14 @@
 		E8224FBD28A0066800246A1F /* WebDependencies */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = WebDependencies;
+		};
+		E8224FD728A0076900246A1F /* AppDependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppDependencies;
+		};
+		E8224FD928A0076E00246A1F /* AppDependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppDependencies;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
