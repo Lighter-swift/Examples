@@ -21,6 +21,25 @@ It demonstrates two things:
 - Using [SQLite](https://www.sqlite.org/index.html) table records in
   [Mustache](http://mustache.github.io) for rendering.
 
+This example works as a plain Swift Package Manager tool or as an Xcode
+tool target.
+
+### Running the Example
+
+Either open Package.swift or the xcodeproj in Xcode, select the
+`NorthwindWebAPI` tool scheme and press run.
+
+Or on the shell:
+```bash
+$ swift run NorthwindWebAPI
+```
+
+The example can then be accessed at
+[http://localhost:1337/](http://localhost:1337/).
+
+
+### Overview
+
 The example in a nutshell:
 ```swift
 #!/usr/bin/swift sh

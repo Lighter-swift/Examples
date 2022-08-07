@@ -1,13 +1,11 @@
 <table class="ui celled striped table">
   <thead>
-    <tr><th colspan="2">Supplier: {{supplier.companyName}}</th></tr>
+    <tr><th colspan="2">
+      Supplier: {{supplier.companyName}}
+      (<i class="key icon"></i> {{supplier.id}})
+    </th></tr>
   </thead>
   <tbody>
-    <tr>
-      <td class="collapsing"><i class="key icon"></i></td>
-      <td>{{supplier.id}}</td>
-    </tr>
-
     {{#supplier.contactName}}
       <tr>
         <td class="collapsing">Contact</td>
