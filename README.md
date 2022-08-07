@@ -21,7 +21,8 @@ In the example project this is the "AppLogic" package.
   exposing the DB as a JSON API endpoint, and providing a few pretty HTML pages
   showing data contained.)
 - [NorthwindSwiftUI](Sources/NorthwindSwiftUI/) (A SwiftUI example that lets one
-  browse the Northwind database.)
+  browse the Northwind database. Uses the Lighter API in combination and
+  its async/await supports.)
 
 
 ### Dependencies

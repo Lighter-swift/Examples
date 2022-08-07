@@ -2,13 +2,19 @@ import SwiftUI
 import Northwind
 
 struct ContentView: View {
+
+  @StateObject private var products = DataSource(Northwind.module.products)
+    
   var body: some View {
-    VStack {
-      Image(systemName: "globe")
-        .imageScale(.large)
-        .foregroundColor(.accentColor)
-      Text("Hello, world!")
+    List {
+      ForEach(products.items) { record in
+        Text(verbatim: "\(record)")
+      }
     }
+    .task {
+      try! await products.fetch()
+    }
+    .frame(minWidth: 640, minHeight: 340)
   }
 }
 

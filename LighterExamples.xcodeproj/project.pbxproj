@@ -16,6 +16,7 @@
 		E8224FD528A0073000246A1F /* NorthwindSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8224FD328A0073000246A1F /* NorthwindSwiftUIApp.swift */; };
 		E8224FD628A0073000246A1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8224FD428A0073000246A1F /* ContentView.swift */; };
 		E8224FDA28A0076E00246A1F /* AppDependencies in Frameworks */ = {isa = PBXBuildFile; productRef = E8224FD928A0076E00246A1F /* AppDependencies */; };
+		E8224FDF28A055A200246A1F /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8224FDE28A055A200246A1F /* DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +51,10 @@
 		E8224FCD28A0071100246A1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E8224FD328A0073000246A1F /* NorthwindSwiftUIApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NorthwindSwiftUIApp.swift; sourceTree = "<group>"; };
 		E8224FD428A0073000246A1F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E8224FDB28A0557000246A1F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E8224FDC28A0557000246A1F /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		E8224FDD28A0557000246A1F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		E8224FDE28A055A200246A1F /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +80,9 @@
 		E8224F8228A005CF00246A1F = {
 			isa = PBXGroup;
 			children = (
+				E8224FDB28A0557000246A1F /* README.md */,
+				E8224FDD28A0557000246A1F /* LICENSE */,
+				E8224FDC28A0557000246A1F /* CONTRIBUTING.md */,
 				E8224F9E28A0061600246A1F /* Sources */,
 				E8224FC428A0071000246A1F /* NorthwindSwiftUI */,
 				E8224F9D28A0060F00246A1F /* AppLogic */,
@@ -158,6 +166,7 @@
 			children = (
 				E8224FD328A0073000246A1F /* NorthwindSwiftUIApp.swift */,
 				E8224FD428A0073000246A1F /* ContentView.swift */,
+				E8224FDE28A055A200246A1F /* DataSource.swift */,
 			);
 			name = NorthwindSwiftUI;
 			path = Sources/NorthwindSwiftUI;
@@ -272,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8224FDF28A055A200246A1F /* DataSource.swift in Sources */,
 				E8224FD628A0073000246A1F /* ContentView.swift in Sources */,
 				E8224FD528A0073000246A1F /* NorthwindSwiftUIApp.swift in Sources */,
 			);
