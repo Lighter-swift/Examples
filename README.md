@@ -14,6 +14,22 @@ seems to be required w/ the Xcode 14 beta.
 Otherwise the Swift package plugins do not seem to run.
 In the example project this is the "AppLogic" package.
 
+### Northwind Database
+
+The Northwind database is a common database example that has been ported
+to SQLite. 
+Lighter provides a Swift version of that in the
+[NorthwindSQLite.swift](https://github.com/55DB091A-8471-447B-8F50-5DFF4C1B14AC/NorthwindSQLite.swift)
+repository.
+
+> Note: The particular SQLite version of the Northwind database is quite 
+> lacking. For example booleans are stored as TEXTs, many columns are
+> inappropriately marked as `NULL`able.<br>
+> That actually makes it a good example on how to deal with such databases in
+> Lighter.
+
+The Swift Northwind API: [Documentation](https://55db091a-8471-447b-8f50-5dff4c1b14ac.github.io/NorthwindSQLite.swift/documentation/northwind/).
+
 
 ### Examples
 

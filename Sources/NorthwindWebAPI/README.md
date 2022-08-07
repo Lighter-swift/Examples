@@ -24,6 +24,8 @@ It demonstrates two things:
 This example works as a plain Swift Package Manager tool or as an Xcode
 tool target.
 
+Northwind API: [Documentation](https://55db091a-8471-447b-8f50-5dff4c1b14ac.github.io/NorthwindSQLite.swift/documentation/northwind/)
+
 ### Running the Example
 
 Either open Package.swift or the xcodeproj in Xcode, select the
@@ -78,11 +80,3 @@ Lighter is brought to you by
 [Helge Heß](https://github.com/helje5/) / [ZeeZide](https://zeezide.de).
 We like feedback, GitHub stars, cool contract work, 
 presumably any form of praise you can think of.
-
-**Want to support my work**?
-Buy an app:
-[Past for iChat](https://apps.apple.com/us/app/past-for-ichat/id1554897185),
-[SVG Shaper](https://apps.apple.com/us/app/svg-shaper-for-swiftui/id1566140414),
-[Shrugs](https://shrugs.app/),
-[HMScriptEditor](https://apps.apple.com/us/app/hmscripteditor/id1483239744).
-You don't have to use it! 😀
