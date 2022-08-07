@@ -20,6 +20,8 @@ In the example project this is the "AppLogic" package.
 - [NorthwindWebAPI](Sources/NorthwindWebAPI/) (A server side Swift example
   exposing the DB as a JSON API endpoint, and providing a few pretty HTML pages
   showing data contained.)
+- [NorthwindSwiftUI](Sources/NorthwindSwiftUI/) (A SwiftUI example that lets one
+  browse the Northwind database.)
 
 
 ### Dependencies
