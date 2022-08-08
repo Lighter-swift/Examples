@@ -65,8 +65,41 @@ struct ProductPage: View {
     }
 
   }
-    
+
   var body: some View {
+    #if os(macOS)
+      macOS
+    #else
+      iOS
+    #endif
+  }
+  
+  private var iOS: some View {
+    Form {
+      ProductForm(product: $product)
+        .padding()
+        .navigationTitle(product.productName)
+      
+      Divider()
+      
+      if let category = category {
+        Divider()
+        CategoryInfo(category: category)
+      }
+
+      if let supplier = supplier {
+        Divider()
+        Form {
+          SupplierForm(supplier: Binding( // deal with the nil value
+            get: { supplier }, set: { self.supplier = $0 }
+          ))
+        }
+        .padding([ .horizontal, .bottom ])
+      }
+    }
+  }
+
+  private var macOS: some View {
     VStack(alignment: .center, spacing: 0) {
       HStack {
         Spacer()
@@ -86,8 +119,10 @@ struct ProductPage: View {
       Divider()
       
       ScrollView {
-        ProductForm(product: $product)
-          .padding()
+        Form {
+          ProductForm(product: $product)
+        }
+        .padding()
 
         if let category = category {
           Divider()
@@ -96,9 +131,11 @@ struct ProductPage: View {
 
         if let supplier = supplier {
           Divider()
-          SupplierForm(supplier: Binding( // deal with the nil value
-            get: { supplier }, set: { self.supplier = $0 }
-          ))
+          Form {
+            SupplierForm(supplier: Binding( // deal with the nil value
+              get: { supplier }, set: { self.supplier = $0 }
+            ))
+          }
           .padding([ .horizontal, .bottom ])
         }
         

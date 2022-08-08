@@ -16,6 +16,8 @@ struct ContentView: View {
       }
       .layoutPriority(2)
     }
-    .frame(minWidth: 640, minHeight: 340)
+    #if os(macOS)
+      .frame(minWidth: 640, minHeight: 340)
+    #endif
   }
 }
