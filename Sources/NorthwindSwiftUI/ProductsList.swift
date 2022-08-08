@@ -14,12 +14,19 @@ struct ProductsList: View {
   
   /// For current search string
   @State private var searchString = ""
+  
+  private func updateSavedProduct(_ product: Product) {
+    guard let idx = products.firstIndex(where: { $0.id == product.id }) else {
+      return // not in the list?
+    }
+    products[idx] = product
+  }
     
   var body: some View {
     List {
       ForEach(products) { product in
         NavigationLink(destination:
-                        ProductPage(snapshot: product)
+                        ProductPage(snapshot: product, onSave: updateSavedProduct)
                           .navigationTitle(product.productName),
                        tag: product.id, selection: $selectedProduct)
         {

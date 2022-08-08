@@ -9,6 +9,11 @@ struct ProductPage: View {
   /// The snapshot is the current value that got fetched from the database
   let snapshot : Product
   
+  /// This is used to tell the list about a change we did. I.e. a save.
+  /// In a real app there should be more app structure around this, but that
+  /// won't be "Lighter", but "Heavier" (stay tuned™️).
+  let onSave : ( Product ) -> Void
+  
   /// If we allow editing, we can keep a copy of the snapshot for that purpose.
   @State private var product  : Product = Product(id: 0, productName: "")
 
@@ -41,10 +46,24 @@ struct ProductPage: View {
     product = snapshot
   }
   
-  /// We are not actually saving anything in this demo yet.
-  private func save() {
-    // because we use the module embedded resource database, which is r/o
-    print("Sorry, we don't save anything yet :-)")
+  private func save() async {
+    do {
+      // While not required, it is always a good idea to update in an
+      // transaction as this ensures order and consistency.
+      try await database.transaction { tx in
+        try tx.update(product)
+        // we always save, this, demo only.
+        if let supplier = supplier { try tx.update(supplier) }
+      }
+      await MainActor.run {
+        // tell the parent view that the record got modified
+        self.onSave(product)
+      }
+    }
+    catch {
+      print("ERROR: failed to save:", error)
+    }
+
   }
     
   var body: some View {
@@ -97,13 +116,15 @@ struct ProductPage: View {
         Button(action: revert) {
           Label("revert", systemImage: "arrow.counterclockwise")
         }
+        .keyboardShortcut("r", modifiers: [ .command ])
         .help("Revert changes made to the record.")
         .disabled(!hasChanges)
       }
       ToolbarItem(placement: .confirmationAction) {
-        Button(action: revert) {
+        Button(action: { Task { await self.save() } }) {
           Label("save", systemImage: "s.circle")
         }
+        .keyboardShortcut("s", modifiers: [ .command ])
         .help("Save changes made to the record.")
         .disabled(!hasChanges)
       }
