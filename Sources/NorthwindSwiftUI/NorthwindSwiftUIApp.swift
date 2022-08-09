@@ -9,34 +9,13 @@ struct NorthwindSwiftUIApp: App {
   let database : Northwind
 
   init() {
-    // This is the URL where the database embedded in the Northwind package is
-    // located.
-    let resourceURL = Northwind.module.connectionHandler.url
-
-    let fm = FileManager.default
-    guard let url =
-      fm.urls(for: .applicationSupportDirectory, in: .userDomainMask).first?
-      .appendingPathComponent("Northwind.sqlite3") else
-    {
-      database = .module
-      return
-    }
-    
-    // Can we write to the destination URL already?
-    if fm.isWritableFile(atPath: url.path) {
-      print("Using existing DB at:", url.path)
-      database = Northwind(url: url)
-      return
-    }
-   
-    // We don't have the editable DB yet, copy it.
     do {
-      try fm.copyItem(at: resourceURL, to: url)
-      database = Northwind(url: url)
-      print("Bootstrapped editable DB at:", url.path)
+      let db = try Northwind.bootstrap(
+        copying: Northwind.module.connectionHandler.url
+      )
     }
     catch {
-      print("ERROR: failed to copy resource database:", resourceURL.path)
+      print("ERROR: failed to copy resource database")
       database = .module
     }
   }
