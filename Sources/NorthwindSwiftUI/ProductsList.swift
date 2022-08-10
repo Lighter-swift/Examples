@@ -14,7 +14,7 @@ struct ProductsList: View {
   /// We track the currently selected product
   @Binding var selectedProduct : Product.ID?
   
-  /// For current search string.
+  /// The current search string.
   @State private var searchString = ""
 
   @Environment(\.horizontalSizeClass) private var horizontalSizeClass
