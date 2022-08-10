@@ -1,33 +1,30 @@
 import SwiftUI
 import Northwind
 
+@available(iOS 16.0, macOS 13, *)
 struct ProductsList: View {
 
   /// The database is passed down by the Application struct in the environment.
   @Environment(\.database) private var database
   
-  /// In this state we keep the list of currently fetched products.
-  @State private var products : [ Product ] = []
+  /// The products are passed in as a binding, as the detail needs to
+  /// communicate with it.
+  @Binding var products : [ Product ]
   
   /// We track the currently selected product
-  @State private var selectedProduct : Product.ID?
+  @Binding var selectedProduct : Product.ID?
   
-  /// For current search string
+  /// For current search string.
   @State private var searchString = ""
-    
+
+  @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+
   var body: some View {
-    List {
-      ForEach(products) { product in
-        NavigationLink(destination: ProductPage(snapshot: product),
-                       tag: product.id, selection: $selectedProduct)
-        {
-          ProductCell(product: product)
-        }
-      }
+    List(products, selection: $selectedProduct) { product in
+      ProductCell(product: product)
     }
     .searchable(text: $searchString)
     .task(id: searchString) {
-      
       do {
         // Here we are using a query builder to filter by column. Alternatively
         // one can use an arbitrary Swift closure using `filter`.
@@ -38,14 +35,17 @@ struct ProductsList: View {
           )
         }
         
-        // Pre-select the first match if none is selected
-        if selectedProduct == nil, let product = products.first {
-          selectedProduct = product.id
+        if horizontalSizeClass != .compact {
+          // Pre-select the first match if none is selected
+          if selectedProduct == nil, let product = products.first {
+            selectedProduct = product.id
+          }
         }
       }
       catch { // really, do proper error handling :-)
         print("Fetch failed:", error)
       }
     }
+    .navigationTitle("Products")
   }
 }

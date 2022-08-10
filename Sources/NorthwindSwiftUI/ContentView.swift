@@ -4,18 +4,11 @@ import Northwind
 struct ContentView: View {
     
   var body: some View {
-    NavigationView {
-      Sidebar()
-      
-      ProductsList()
-      
-      ZStack {
-        Text("Nothing Selected")
-          .font(.title)
-          .foregroundColor(.accentColor)
-      }
-      .layoutPriority(2)
+    if #available(iOS 16, macOS 13, *) {
+      MainView()
     }
-    .frame(minWidth: 640, minHeight: 340)
+    else {
+      NavView.MainView()
+    }
   }
 }

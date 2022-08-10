@@ -7,12 +7,15 @@ Examples for the Lighter SQLite environment, SwiftUI and server side.
 
 Note: The examples requires Swift 5.7 / Xcode 14b for proper plugin support.
 
-When embedding a package using Lighter (like
+When embedding a package using Enlighter (like
 [NorthwindSQLite.swift](https://github.com/Lighter-swift/NorthwindSQLite.swift.git)),
 [a local package](https://developer.apple.com/documentation/xcode/organizing-your-code-with-local-packages) 
-seems to be required w/ the Xcode 14 beta.
+seems to be required w/ the Xcode 14 beta (3...5).
 Otherwise the Swift package plugins do not seem to run.
 In the example project this is the "AppLogic" package.
+If Xcode gets stuck or doesn't run the plugin, a package update sometimes
+help.
+
 
 ### Northwind Database
 

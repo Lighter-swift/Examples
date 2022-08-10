@@ -4,21 +4,25 @@ import Lighter
 
 /// Global application state. A good place to setup the database object.
 @main
-struct NorthwindSwiftUIApp: App {
+struct NorthwindApp: App {
   
-  let database : Northwind
-  
-  init() {
-    self.database = Northwind.module
-  }
+  let database = (try? Northwind.bootstrap(
+    copying: Northwind.module.connectionHandler.url
+  )) ?? .module!
   
   var body: some Scene {
     WindowGroup {
       ContentView()
         .environment(\.database, database)
+      #if os(macOS)
+        .frame(minWidth: 640, minHeight: 340)
+      #endif
     }
   }
 }
+
+
+// MARK: - Environment Keys
 
 extension EnvironmentValues {
   
@@ -32,6 +36,9 @@ extension EnvironmentValues {
     get { self[DatabaseKey.self] }
   }
 }
+
+
+// MARK: - Custom Formatters
 
 /// This is a simple formatter that can take optional Strings, turn them into
 /// empty ones, and the reverse.

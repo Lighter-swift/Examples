@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E81B195128A06525003A0F1C /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B195028A06525003A0F1C /* ProductCell.swift */; };
-		E81B195328A065A6003A0F1C /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B195228A065A6003A0F1C /* Sidebar.swift */; };
+		E81B195328A065A6003A0F1C /* NavViewSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B195228A065A6003A0F1C /* NavViewSidebar.swift */; };
 		E81B195528A065DD003A0F1C /* ProductPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B195428A065DD003A0F1C /* ProductPage.swift */; };
 		E81B195728A07563003A0F1C /* ProductForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B195628A07563003A0F1C /* ProductForm.swift */; };
 		E81B195928A0769D003A0F1C /* Ambiguities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B195828A0769D003A0F1C /* Ambiguities.swift */; };
@@ -21,10 +21,15 @@
 		E8224FBE28A0066800246A1F /* WebDependencies in Frameworks */ = {isa = PBXBuildFile; productRef = E8224FBD28A0066800246A1F /* WebDependencies */; };
 		E8224FCA28A0071100246A1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8224FC928A0071100246A1F /* Assets.xcassets */; };
 		E8224FCE28A0071100246A1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8224FCD28A0071100246A1F /* Preview Assets.xcassets */; };
-		E8224FD528A0073000246A1F /* NorthwindSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8224FD328A0073000246A1F /* NorthwindSwiftUIApp.swift */; };
+		E8224FD528A0073000246A1F /* NorthwindApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8224FD328A0073000246A1F /* NorthwindApp.swift */; };
 		E8224FD628A0073000246A1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8224FD428A0073000246A1F /* ContentView.swift */; };
 		E8224FDA28A0076E00246A1F /* AppDependencies in Frameworks */ = {isa = PBXBuildFile; productRef = E8224FD928A0076E00246A1F /* AppDependencies */; };
 		E8224FE128A05CB900246A1F /* ProductsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8224FE028A05CB900246A1F /* ProductsList.swift */; };
+		E87B410D28A3C40500576D8A /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B410C28A3C40500576D8A /* NavView.swift */; };
+		E87B411228A3C4B900576D8A /* NavVIewProductsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B411128A3C4B900576D8A /* NavVIewProductsList.swift */; };
+		E87B411428A3C58500576D8A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B411328A3C58500576D8A /* MainView.swift */; };
+		E87B411628A3C7EB00576D8A /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B411528A3C7EB00576D8A /* Sidebar.swift */; };
+		E87D45FF28A3C341008E04EA /* NavViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87D45FE28A3C341008E04EA /* NavViewMain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,7 +46,7 @@
 
 /* Begin PBXFileReference section */
 		E81B195028A06525003A0F1C /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
-		E81B195228A065A6003A0F1C /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
+		E81B195228A065A6003A0F1C /* NavViewSidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewSidebar.swift; sourceTree = "<group>"; };
 		E81B195428A065DD003A0F1C /* ProductPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPage.swift; sourceTree = "<group>"; };
 		E81B195628A07563003A0F1C /* ProductForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductForm.swift; sourceTree = "<group>"; };
 		E81B195828A0769D003A0F1C /* Ambiguities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ambiguities.swift; sourceTree = "<group>"; };
@@ -65,12 +70,18 @@
 		E8224FC928A0071100246A1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8224FCB28A0071100246A1F /* NorthwindSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NorthwindSwiftUI.entitlements; sourceTree = "<group>"; };
 		E8224FCD28A0071100246A1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E8224FD328A0073000246A1F /* NorthwindSwiftUIApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NorthwindSwiftUIApp.swift; sourceTree = "<group>"; };
+		E8224FD328A0073000246A1F /* NorthwindApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NorthwindApp.swift; sourceTree = "<group>"; };
 		E8224FD428A0073000246A1F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E8224FDB28A0557000246A1F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E8224FDC28A0557000246A1F /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
 		E8224FDD28A0557000246A1F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		E8224FE028A05CB900246A1F /* ProductsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsList.swift; sourceTree = "<group>"; };
+		E87B410C28A3C40500576D8A /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
+		E87B411128A3C4B900576D8A /* NavVIewProductsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavVIewProductsList.swift; sourceTree = "<group>"; };
+		E87B411328A3C58500576D8A /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E87B411528A3C7EB00576D8A /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
+		E87B411728A3CF9D00576D8A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E87D45FE28A3C341008E04EA /* NavViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewMain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,9 +191,11 @@
 		E8224FD228A0073000246A1F /* NorthwindSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				E8224FD328A0073000246A1F /* NorthwindSwiftUIApp.swift */,
+				E87B411728A3CF9D00576D8A /* README.md */,
+				E8224FD328A0073000246A1F /* NorthwindApp.swift */,
 				E8224FD428A0073000246A1F /* ContentView.swift */,
-				E81B195228A065A6003A0F1C /* Sidebar.swift */,
+				E87B411328A3C58500576D8A /* MainView.swift */,
+				E87B411528A3C7EB00576D8A /* Sidebar.swift */,
 				E8224FE028A05CB900246A1F /* ProductsList.swift */,
 				E81B195028A06525003A0F1C /* ProductCell.swift */,
 				E81B195428A065DD003A0F1C /* ProductPage.swift */,
@@ -190,10 +203,22 @@
 				E81B195A28A0782D003A0F1C /* SupplierForm.swift */,
 				E81B195C28A07836003A0F1C /* CategoryInfo.swift */,
 				E81B195E28A078B8003A0F1C /* Picture.swift */,
+				E87D45FD28A3C2FE008E04EA /* NavigationViewBasedUI */,
 				E81B195828A0769D003A0F1C /* Ambiguities.swift */,
 			);
 			name = NorthwindSwiftUI;
 			path = Sources/NorthwindSwiftUI;
+			sourceTree = "<group>";
+		};
+		E87D45FD28A3C2FE008E04EA /* NavigationViewBasedUI */ = {
+			isa = PBXGroup;
+			children = (
+				E87B410C28A3C40500576D8A /* NavView.swift */,
+				E87D45FE28A3C341008E04EA /* NavViewMain.swift */,
+				E81B195228A065A6003A0F1C /* NavViewSidebar.swift */,
+				E87B411128A3C4B900576D8A /* NavVIewProductsList.swift */,
+			);
+			path = NavigationViewBasedUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +293,8 @@
 				Base,
 			);
 			mainGroup = E8224F8228A005CF00246A1F;
+			packageReferences = (
+			);
 			productRefGroup = E8224F8C28A005CF00246A1F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -307,15 +334,20 @@
 			files = (
 				E81B195528A065DD003A0F1C /* ProductPage.swift in Sources */,
 				E81B195D28A07836003A0F1C /* CategoryInfo.swift in Sources */,
-				E81B195328A065A6003A0F1C /* Sidebar.swift in Sources */,
+				E87B411628A3C7EB00576D8A /* Sidebar.swift in Sources */,
+				E81B195328A065A6003A0F1C /* NavViewSidebar.swift in Sources */,
+				E87B410D28A3C40500576D8A /* NavView.swift in Sources */,
 				E81B195F28A078B8003A0F1C /* Picture.swift in Sources */,
+				E87B411428A3C58500576D8A /* MainView.swift in Sources */,
 				E81B195728A07563003A0F1C /* ProductForm.swift in Sources */,
+				E87D45FF28A3C341008E04EA /* NavViewMain.swift in Sources */,
+				E87B411228A3C4B900576D8A /* NavVIewProductsList.swift in Sources */,
 				E8224FE128A05CB900246A1F /* ProductsList.swift in Sources */,
 				E81B195128A06525003A0F1C /* ProductCell.swift in Sources */,
 				E81B195928A0769D003A0F1C /* Ambiguities.swift in Sources */,
 				E81B195B28A0782D003A0F1C /* SupplierForm.swift in Sources */,
 				E8224FD628A0073000246A1F /* ContentView.swift in Sources */,
-				E8224FD528A0073000246A1F /* NorthwindSwiftUIApp.swift in Sources */,
+				E8224FD528A0073000246A1F /* NorthwindApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,10 +517,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.zeezide.lighter.NorthwindSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -521,10 +553,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.zeezide.lighter.NorthwindSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
