@@ -21,7 +21,7 @@
 		E8224FBE28A0066800246A1F /* WebDependencies in Frameworks */ = {isa = PBXBuildFile; productRef = E8224FBD28A0066800246A1F /* WebDependencies */; };
 		E8224FCA28A0071100246A1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8224FC928A0071100246A1F /* Assets.xcassets */; };
 		E8224FCE28A0071100246A1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8224FCD28A0071100246A1F /* Preview Assets.xcassets */; };
-		E8224FD528A0073000246A1F /* NorthwindSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8224FD328A0073000246A1F /* NorthwindSwiftUIApp.swift */; };
+		E8224FD528A0073000246A1F /* NorthwindApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8224FD328A0073000246A1F /* NorthwindApp.swift */; };
 		E8224FD628A0073000246A1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8224FD428A0073000246A1F /* ContentView.swift */; };
 		E8224FDA28A0076E00246A1F /* AppDependencies in Frameworks */ = {isa = PBXBuildFile; productRef = E8224FD928A0076E00246A1F /* AppDependencies */; };
 		E8224FE128A05CB900246A1F /* ProductsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8224FE028A05CB900246A1F /* ProductsList.swift */; };
@@ -70,7 +70,7 @@
 		E8224FC928A0071100246A1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8224FCB28A0071100246A1F /* NorthwindSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NorthwindSwiftUI.entitlements; sourceTree = "<group>"; };
 		E8224FCD28A0071100246A1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E8224FD328A0073000246A1F /* NorthwindSwiftUIApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NorthwindSwiftUIApp.swift; sourceTree = "<group>"; };
+		E8224FD328A0073000246A1F /* NorthwindApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NorthwindApp.swift; sourceTree = "<group>"; };
 		E8224FD428A0073000246A1F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E8224FDB28A0557000246A1F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E8224FDC28A0557000246A1F /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
@@ -80,6 +80,7 @@
 		E87B411128A3C4B900576D8A /* NavVIewProductsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavVIewProductsList.swift; sourceTree = "<group>"; };
 		E87B411328A3C58500576D8A /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E87B411528A3C7EB00576D8A /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
+		E87B411728A3CF9D00576D8A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E87D45FE28A3C341008E04EA /* NavViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewMain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -190,7 +191,8 @@
 		E8224FD228A0073000246A1F /* NorthwindSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				E8224FD328A0073000246A1F /* NorthwindSwiftUIApp.swift */,
+				E87B411728A3CF9D00576D8A /* README.md */,
+				E8224FD328A0073000246A1F /* NorthwindApp.swift */,
 				E8224FD428A0073000246A1F /* ContentView.swift */,
 				E87B411328A3C58500576D8A /* MainView.swift */,
 				E87B411528A3C7EB00576D8A /* Sidebar.swift */,
@@ -345,7 +347,7 @@
 				E81B195928A0769D003A0F1C /* Ambiguities.swift in Sources */,
 				E81B195B28A0782D003A0F1C /* SupplierForm.swift in Sources */,
 				E8224FD628A0073000246A1F /* ContentView.swift in Sources */,
-				E8224FD528A0073000246A1F /* NorthwindSwiftUIApp.swift in Sources */,
+				E8224FD528A0073000246A1F /* NorthwindApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

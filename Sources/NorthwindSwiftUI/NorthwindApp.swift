@@ -4,21 +4,11 @@ import Lighter
 
 /// Global application state. A good place to setup the database object.
 @main
-struct NorthwindSwiftUIApp: App {
+struct NorthwindApp: App {
   
-  let database : Northwind
-
-  init() {
-    do {
-      database = try Northwind.bootstrap(
-        copying: Northwind.module.connectionHandler.url
-      )
-    }
-    catch {
-      print("ERROR: failed to copy resource database:", error)
-      database = .module
-    }
-  }
+  let database = (try? Northwind.bootstrap(
+    copying: Northwind.module.connectionHandler.url
+  )) ?? .module!
   
   var body: some Scene {
     WindowGroup {

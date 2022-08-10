@@ -107,7 +107,7 @@ struct ProductPage: View {
       }
       ToolbarItem(placement: .confirmationAction) {
         Button(action: { Task { await self.save() } }) {
-          Label("save", systemImage: "s.circle")
+          Label("save", systemImage: "checkmark.circle")
         }
         .keyboardShortcut("s", modifiers: [ .command ])
         .help("Save changes made to the record.")
@@ -121,8 +121,6 @@ struct ProductPage: View {
       ProductForm(product: $product)
         .padding()
         .navigationTitle(product.productName)
-      
-      Divider()
       
       if let category = category {
         Divider()

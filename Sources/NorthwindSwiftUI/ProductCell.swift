@@ -25,12 +25,12 @@ struct ProductCell: View {
               Text(", \(unitsInStock) in stock")
             }
             else if product.discontinued != "0" {
-              Text(", discontinued")
-                .foregroundColor(.red)
+              Text(", ") +
+              Text("discontinued").foregroundColor(.red)
             }
             else {
-              Text(", out of stock.")
-                .foregroundColor(.red)
+              Text(", ") +
+              Text("out of stock.").foregroundColor(.red)
               if let ordered = product.unitsOnOrder, ordered > 0 {
                 Text(", ordered \(ordered)")
               }

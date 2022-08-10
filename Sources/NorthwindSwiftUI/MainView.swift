@@ -12,13 +12,13 @@ struct MainView: View {
   }
   
   /// The active section in the sidebar
-  @State var section : Section? = .products
+  @State private var section : Section? = .products
 
   /// The array of products that got fetched
   @State private var products : [ Product ] = []
 
   /// We track the currently selected product
-  @State var selectedProductID : Product.ID?
+  @State private var selectedProductID : Product.ID?
 
   
   private var selectedProduct : Product? {
