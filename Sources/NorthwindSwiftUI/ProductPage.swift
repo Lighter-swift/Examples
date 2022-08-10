@@ -123,18 +123,16 @@ struct ProductPage: View {
         .navigationTitle(product.productName)
       
       if let category = category {
-        Divider()
-        CategoryInfo(category: category)
-      }
-
-      if let supplier = supplier {
-        Divider()
-        Form {
-          SupplierForm(supplier: Binding( // deal with the nil value
-            get: { supplier }, set: { self.supplier = $0 }
-          ))
+        Section("Category") {
+          CategoryInfo(category: category)
         }
-        .padding([ .horizontal, .bottom ])
+      }
+      
+      if let supplier = supplier {
+        SupplierForm(supplier: Binding( // deal with the nil value
+          get: { supplier }, set: { self.supplier = $0 }
+        ))
+        .labelStyle(.titleAndIcon)
       }
     }
   }

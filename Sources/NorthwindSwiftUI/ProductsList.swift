@@ -16,7 +16,9 @@ struct ProductsList: View {
   
   /// For current search string.
   @State private var searchString = ""
-    
+
+  @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+
   var body: some View {
     List(products, selection: $selectedProduct) { product in
       ProductCell(product: product)
@@ -33,9 +35,11 @@ struct ProductsList: View {
           )
         }
         
-        // Pre-select the first match if none is selected
-        if selectedProduct == nil, let product = products.first {
-          selectedProduct = product.id
+        if horizontalSizeClass != .compact {
+          // Pre-select the first match if none is selected
+          if selectedProduct == nil, let product = products.first {
+            selectedProduct = product.id
+          }
         }
       }
       catch { // really, do proper error handling :-)
