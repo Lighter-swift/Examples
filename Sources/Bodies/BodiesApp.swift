@@ -14,10 +14,19 @@ struct BodiesApp: App {
   
     var body: some Scene {
         WindowGroup {
-            NavigationView { // just for the visual styling
+            #if os(macOS)
                 ContentView(database: database)
+                    .frame(width: 440) // just fix it
                     .navigationTitle("Solar Bodies")
-            }
+            #else // iOS
+                NavigationView { // just for the visual styling
+                    ContentView(database: database)
+                        .navigationTitle("Solar Bodies")
+                }
+            #endif
         }
+        #if os(macOS)
+        .windowStyle(.titleBar)
+        #endif
     }
 }

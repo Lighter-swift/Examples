@@ -67,6 +67,9 @@ struct ContentView: View {
                 try await fetchAndUpdateCache()
             }
         }
+        #if os(macOS)
+        .padding(.top, 1) // don't ask
+        #endif
     }
     
     private func fetchAndUpdateCache() async throws {
