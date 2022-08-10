@@ -12,9 +12,9 @@ var package = Package(
   
   dependencies: [
     .package(url: "git@github.com:55DB091A-8471-447B-8F50-5DFF4C1B14AC/Lighter.git",
-             branch: "develop"),
+             from: "1.0.0"),
     .package(url: "git@github.com:55DB091A-8471-447B-8F50-5DFF4C1B14AC/NorthwindSQLite.swift.git",
-             branch: "develop"),
+             from: "1.0.0"),
              
     .package(url: "https://github.com/Macro-swift/MacroExpress.git",
              from: "0.8.8"),
