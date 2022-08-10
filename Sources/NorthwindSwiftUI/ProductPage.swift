@@ -1,6 +1,13 @@
 import SwiftUI
 import Northwind
 
+/**
+ * A SwiftUI view managing a form that shows a product and allows editing
+ * of the same.
+ *
+ * This also demos fetching of related records (the product supplier and the
+ * product category).
+ */
 struct ProductPage: View {
 
   /// The database is passed down by the Application struct in the environment.
@@ -51,27 +58,62 @@ struct ProductPage: View {
       // While not required, it is always a good idea to update in an
       // transaction as this ensures order and consistency.
       try await database.transaction { tx in
+        
         try tx.update(product)
-        // we always save, this, demo only.
-        if let supplier = supplier { try tx.update(supplier) }
+        
+        // we always save the supplier, demo only.
+        if let supplier = supplier {
+          try tx.update(supplier)
+        }
       }
+      
       await MainActor.run {
-        // tell the parent view that the record got modified
+        // Tell the parent view that the record got modified, so that the
+        // List can be updated.
         self.onSave(product)
       }
     }
     catch {
       print("ERROR: failed to save:", error)
     }
-
   }
 
   var body: some View {
-    #if os(macOS)
-      macOS
-    #else
-      iOS
-    #endif
+    Group {
+      #if os(macOS)
+        macOS
+      #else
+        iOS
+      #endif
+    }
+    .task { await setup() }
+    .onChange(of: snapshot) { newValue in
+      // If the selection changes, make a copy of the fetched record for
+      // editing.
+      product = newValue
+    }
+    .onAppear {
+      // If the view loads, make a copy of the fetched record for editing.
+      product = snapshot
+    }
+    .toolbar {
+      ToolbarItem(placement: .destructiveAction) {
+        Button(action: revert) {
+          Label("revert", systemImage: "arrow.counterclockwise")
+        }
+        .keyboardShortcut("r", modifiers: [ .command ])
+        .help("Revert changes made to the record.")
+        .disabled(!hasChanges)
+      }
+      ToolbarItem(placement: .confirmationAction) {
+        Button(action: { Task { await self.save() } }) {
+          Label("save", systemImage: "s.circle")
+        }
+        .keyboardShortcut("s", modifiers: [ .command ])
+        .help("Save changes made to the record.")
+        .disabled(!hasChanges)
+      }
+    }
   }
   
   private var iOS: some View {
@@ -140,30 +182,6 @@ struct ProductPage: View {
         }
         
         Spacer()
-      }
-
-    }
-    .task { await setup() }
-    .onAppear {
-      // If the view loads, make a copy of the fetched record for editing.
-      product = snapshot
-    }
-    .toolbar {
-      ToolbarItem(placement: .destructiveAction) {
-        Button(action: revert) {
-          Label("revert", systemImage: "arrow.counterclockwise")
-        }
-        .keyboardShortcut("r", modifiers: [ .command ])
-        .help("Revert changes made to the record.")
-        .disabled(!hasChanges)
-      }
-      ToolbarItem(placement: .confirmationAction) {
-        Button(action: { Task { await self.save() } }) {
-          Label("save", systemImage: "s.circle")
-        }
-        .keyboardShortcut("s", modifiers: [ .command ])
-        .help("Save changes made to the record.")
-        .disabled(!hasChanges)
       }
     }
   }

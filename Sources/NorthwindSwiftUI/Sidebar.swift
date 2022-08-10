@@ -1,23 +1,20 @@
 import SwiftUI
+import Northwind
 
-struct Sidebar: View {
+@available(iOS 16.0, macOS 13, *)
+extension MainView: View {
   
-  private enum Section: String {
-    case products
-  }
-  
-  @State private var section : Section? = .products
-  
-  var body: some View {
-    List {
-      NavigationLink(destination: ProductsList(),
-                     tag: Section.products, selection: $section)
-      {
+  struct Sidebar: View {
+    
+    @Binding var section : Section?
+    
+    var body: some View {
+      List(selection: $section) {
         Label("Products", systemImage: "p.circle")
           .font(.title2)
+          .tag(Section.products)
       }
-      
-      Spacer()
+      .navigationTitle("Northwind")
     }
   }
 }
