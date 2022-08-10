@@ -36,13 +36,17 @@ The Swift Northwind API: [Documentation](https://55db091a-8471-447b-8f50-5dff4c1
 
 ### Examples
 
-- [NorthwindWebAPI](Sources/NorthwindWebAPI/) (A server side Swift example
-  exposing the DB as a JSON API endpoint, and providing a few pretty HTML pages
-  showing data contained.)
-- [NorthwindSwiftUI](Sources/NorthwindSwiftUI/) (A SwiftUI example that lets one
-  browse the Northwind database. Uses the Lighter API in combination and
-  its async/await supports.)
-
+- [Northwind](https://55db091a-8471-447b-8f50-5dff4c1b14ac.github.io/NorthwindSQLite.swift/documentation/northwind/) Database:
+    - [NorthwindWebAPI](Sources/NorthwindWebAPI/) (A server side Swift example
+      exposing the DB as a JSON API endpoint, and providing a few pretty HTML
+      pages showing data contained.)
+    - [NorthwindSwiftUI](Sources/NorthwindSwiftUI/) (A SwiftUI example that lets
+      one browse the Northwind database. Uses the Lighter API in combination and
+      its async/await supports.)
+- Custom database:
+    - [Bodies](Sources/Bodies/) (A SwiftUI example which loads a list of solar
+      bodies from the [web](https://api.le-systeme-solaire.net/en/) and keeps
+      an offline-first, local cache in a SQL source based Lighter setup.)
 
 ### Dependencies
 

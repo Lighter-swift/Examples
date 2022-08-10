@@ -29,7 +29,13 @@
 		E87B411228A3C4B900576D8A /* NavVIewProductsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B411128A3C4B900576D8A /* NavVIewProductsList.swift */; };
 		E87B411428A3C58500576D8A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B411328A3C58500576D8A /* MainView.swift */; };
 		E87B411628A3C7EB00576D8A /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B411528A3C7EB00576D8A /* Sidebar.swift */; };
+		E87B412328A3DC6500576D8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E87B412228A3DC6500576D8A /* Assets.xcassets */; };
+		E87B412728A3DC6500576D8A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E87B412628A3DC6500576D8A /* Preview Assets.xcassets */; };
+		E87B412E28A3DCAD00576D8A /* BodiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B412C28A3DCAD00576D8A /* BodiesApp.swift */; };
+		E87B412F28A3DCAD00576D8A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B412D28A3DCAD00576D8A /* ContentView.swift */; };
 		E87D45FF28A3C341008E04EA /* NavViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87D45FE28A3C341008E04EA /* NavViewMain.swift */; };
+		E8AF70C228A3DD80008444B2 /* Lighter in Frameworks */ = {isa = PBXBuildFile; productRef = E8AF70C128A3DD80008444B2 /* Lighter */; };
+		E8AF70C828A3DDA7008444B2 /* Lighter in Frameworks */ = {isa = PBXBuildFile; productRef = E8AF70C728A3DDA7008444B2 /* Lighter */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -76,12 +82,20 @@
 		E8224FDC28A0557000246A1F /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
 		E8224FDD28A0557000246A1F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		E8224FE028A05CB900246A1F /* ProductsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsList.swift; sourceTree = "<group>"; };
+		E86867D428A3F43300117E0E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E87B410C28A3C40500576D8A /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
 		E87B411128A3C4B900576D8A /* NavVIewProductsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavVIewProductsList.swift; sourceTree = "<group>"; };
 		E87B411328A3C58500576D8A /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E87B411528A3C7EB00576D8A /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
 		E87B411728A3CF9D00576D8A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E87B411C28A3DC6500576D8A /* Bodies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bodies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E87B412228A3DC6500576D8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E87B412428A3DC6500576D8A /* Bodies.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bodies.entitlements; sourceTree = "<group>"; };
+		E87B412628A3DC6500576D8A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E87B412C28A3DCAD00576D8A /* BodiesApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodiesApp.swift; sourceTree = "<group>"; };
+		E87B412D28A3DCAD00576D8A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E87D45FE28A3C341008E04EA /* NavViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewMain.swift; sourceTree = "<group>"; };
+		E8AF70C928A3DDE9008444B2 /* BodiesDB-001.sql */ = {isa = PBXFileReference; lastKnownFileType = text; path = "BodiesDB-001.sql"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8AF70C228A3DD80008444B2 /* Lighter in Frameworks */,
 				E8224FBE28A0066800246A1F /* WebDependencies in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,6 +113,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8224FDA28A0076E00246A1F /* AppDependencies in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E87B411928A3DC6500576D8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8AF70C828A3DDA7008444B2 /* Lighter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,11 +134,13 @@
 				E8224FDD28A0557000246A1F /* LICENSE */,
 				E8224FDC28A0557000246A1F /* CONTRIBUTING.md */,
 				E8224F9E28A0061600246A1F /* Sources */,
-				E8224FC428A0071000246A1F /* NorthwindSwiftUI */,
 				E8224F9D28A0060F00246A1F /* AppLogic */,
+				E8224FC428A0071000246A1F /* NorthwindSwiftUI */,
+				E87B411D28A3DC6500576D8A /* Bodies */,
 				E8224F8C28A005CF00246A1F /* Products */,
 				E8224FBC28A0066800246A1F /* Frameworks */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
 		};
 		E8224F8C28A005CF00246A1F /* Products */ = {
@@ -123,6 +148,7 @@
 			children = (
 				E8224FA328A0063A00246A1F /* NorthwindWebAPI */,
 				E8224FC328A0071000246A1F /* NorthwindSwiftUI.app */,
+				E87B411C28A3DC6500576D8A /* Bodies.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +158,7 @@
 			children = (
 				E8224FD228A0073000246A1F /* NorthwindSwiftUI */,
 				E8224FAA28A0065C00246A1F /* NorthwindWebAPI */,
+				E87B412B28A3DCAD00576D8A /* Bodies */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -210,6 +237,36 @@
 			path = Sources/NorthwindSwiftUI;
 			sourceTree = "<group>";
 		};
+		E87B411D28A3DC6500576D8A /* Bodies */ = {
+			isa = PBXGroup;
+			children = (
+				E87B412228A3DC6500576D8A /* Assets.xcassets */,
+				E87B412428A3DC6500576D8A /* Bodies.entitlements */,
+				E87B412528A3DC6500576D8A /* Preview Content */,
+			);
+			path = Bodies;
+			sourceTree = "<group>";
+		};
+		E87B412528A3DC6500576D8A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E87B412628A3DC6500576D8A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E87B412B28A3DCAD00576D8A /* Bodies */ = {
+			isa = PBXGroup;
+			children = (
+				E86867D428A3F43300117E0E /* README.md */,
+				E87B412C28A3DCAD00576D8A /* BodiesApp.swift */,
+				E87B412D28A3DCAD00576D8A /* ContentView.swift */,
+				E8AF70C928A3DDE9008444B2 /* BodiesDB-001.sql */,
+			);
+			name = Bodies;
+			path = Sources/Bodies;
+			sourceTree = "<group>";
+		};
 		E87D45FD28A3C2FE008E04EA /* NavigationViewBasedUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +297,7 @@
 			name = NorthwindWebAPI;
 			packageProductDependencies = (
 				E8224FBD28A0066800246A1F /* WebDependencies */,
+				E8AF70C128A3DD80008444B2 /* Lighter */,
 			);
 			productName = NorthwindWebAPI;
 			productReference = E8224FA328A0063A00246A1F /* NorthwindWebAPI */;
@@ -266,6 +324,28 @@
 			productReference = E8224FC328A0071000246A1F /* NorthwindSwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E87B411B28A3DC6500576D8A /* Bodies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E87B412A28A3DC6500576D8A /* Build configuration list for PBXNativeTarget "Bodies" */;
+			buildPhases = (
+				E87B411828A3DC6500576D8A /* Sources */,
+				E87B411928A3DC6500576D8A /* Frameworks */,
+				E87B411A28A3DC6500576D8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8AF70C628A3DDA3008444B2 /* PBXTargetDependency */,
+				E8AF70C428A3DD9C008444B2 /* PBXTargetDependency */,
+			);
+			name = Bodies;
+			packageProductDependencies = (
+				E8AF70C728A3DDA7008444B2 /* Lighter */,
+			);
+			productName = Bodies;
+			productReference = E87B411C28A3DC6500576D8A /* Bodies.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -282,6 +362,9 @@
 					E8224FC228A0071000246A1F = {
 						CreatedOnToolsVersion = 14.0;
 					};
+					E87B411B28A3DC6500576D8A = {
+						CreatedOnToolsVersion = 14.0;
+					};
 				};
 			};
 			buildConfigurationList = E8224F8628A005CF00246A1F /* Build configuration list for PBXProject "LighterExamples" */;
@@ -294,6 +377,7 @@
 			);
 			mainGroup = E8224F8228A005CF00246A1F;
 			packageReferences = (
+				E8AF70C028A3DD80008444B2 /* XCRemoteSwiftPackageReference "Lighter" */,
 			);
 			productRefGroup = E8224F8C28A005CF00246A1F /* Products */;
 			projectDirPath = "";
@@ -301,6 +385,7 @@
 			targets = (
 				E8224FA228A0063A00246A1F /* NorthwindWebAPI */,
 				E8224FC228A0071000246A1F /* NorthwindSwiftUI */,
+				E87B411B28A3DC6500576D8A /* Bodies */,
 			);
 		};
 /* End PBXProject section */
@@ -312,6 +397,15 @@
 			files = (
 				E8224FCE28A0071100246A1F /* Preview Assets.xcassets in Resources */,
 				E8224FCA28A0071100246A1F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E87B411A28A3DC6500576D8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E87B412728A3DC6500576D8A /* Preview Assets.xcassets in Resources */,
+				E87B412328A3DC6500576D8A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +445,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E87B411828A3DC6500576D8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E87B412E28A3DCAD00576D8A /* BodiesApp.swift in Sources */,
+				E87B412F28A3DCAD00576D8A /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -361,6 +464,14 @@
 		E8224FD828A0076900246A1F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = E8224FD728A0076900246A1F /* AppDependencies */;
+		};
+		E8AF70C428A3DD9C008444B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = E8AF70C328A3DD9C008444B2 /* Enlighter */;
+		};
+		E8AF70C628A3DDA3008444B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = E8AF70C528A3DDA3008444B2 /* Lighter */;
 		};
 /* End PBXTargetDependency section */
 
@@ -568,6 +679,82 @@
 			};
 			name = Release;
 		};
+		E87B412828A3DC6500576D8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Bodies/Bodies.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Bodies/Preview Content\"";
+				DEVELOPMENT_TEAM = 4GXF3JAMM4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.zeezide.swift.lighter.Bodies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E87B412928A3DC6500576D8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Bodies/Bodies.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Bodies/Preview Content\"";
+				DEVELOPMENT_TEAM = 4GXF3JAMM4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.zeezide.swift.lighter.Bodies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -598,7 +785,27 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		E87B412A28A3DC6500576D8A /* Build configuration list for PBXNativeTarget "Bodies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E87B412828A3DC6500576D8A /* Debug */,
+				E87B412928A3DC6500576D8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E8AF70C028A3DD80008444B2 /* XCRemoteSwiftPackageReference "Lighter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:55DB091A-8471-447B-8F50-5DFF4C1B14AC/Lighter.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		E8224FBA28A0066300246A1F /* WebDependencies */ = {
@@ -616,6 +823,26 @@
 		E8224FD928A0076E00246A1F /* AppDependencies */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AppDependencies;
+		};
+		E8AF70C128A3DD80008444B2 /* Lighter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8AF70C028A3DD80008444B2 /* XCRemoteSwiftPackageReference "Lighter" */;
+			productName = Lighter;
+		};
+		E8AF70C328A3DD9C008444B2 /* Enlighter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8AF70C028A3DD80008444B2 /* XCRemoteSwiftPackageReference "Lighter" */;
+			productName = "plugin:Enlighter";
+		};
+		E8AF70C528A3DDA3008444B2 /* Lighter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8AF70C028A3DD80008444B2 /* XCRemoteSwiftPackageReference "Lighter" */;
+			productName = Lighter;
+		};
+		E8AF70C728A3DDA7008444B2 /* Lighter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8AF70C028A3DD80008444B2 /* XCRemoteSwiftPackageReference "Lighter" */;
+			productName = Lighter;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

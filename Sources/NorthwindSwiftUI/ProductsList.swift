@@ -14,10 +14,12 @@ struct ProductsList: View {
   /// We track the currently selected product
   @Binding var selectedProduct : Product.ID?
   
-  /// For current search string.
+  /// The current search string.
   @State private var searchString = ""
 
+  #if !os(macOS)
   @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+  #endif
 
   var body: some View {
     List(products, selection: $selectedProduct) { product in
@@ -35,12 +37,14 @@ struct ProductsList: View {
           )
         }
         
+        #if !os(macOS)
         if horizontalSizeClass != .compact {
           // Pre-select the first match if none is selected
           if selectedProduct == nil, let product = products.first {
             selectedProduct = product.id
           }
         }
+        #endif
       }
       catch { // really, do proper error handling :-)
         print("Fetch failed:", error)
