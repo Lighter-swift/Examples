@@ -22,7 +22,7 @@ help.
 The Northwind database is a common database example that has been ported
 to SQLite. 
 Lighter provides a Swift version of that in the
-[NorthwindSQLite.swift](https://github.com/55DB091A-8471-447B-8F50-5DFF4C1B14AC/NorthwindSQLite.swift)
+[NorthwindSQLite.swift](https://github.com/Lighter-swift/NorthwindSQLite.swift)
 repository.
 
 > Note: The particular SQLite version of the Northwind database is quite 
@@ -31,17 +31,17 @@ repository.
 > That actually makes it a good example on how to deal with such databases in
 > Lighter.
 
-The Swift Northwind API: [Documentation](https://55db091a-8471-447b-8f50-5dff4c1b14ac.github.io/NorthwindSQLite.swift/documentation/northwind/).
+The Swift Northwind API: [Documentation](https://Lighter-swift.github.io/NorthwindSQLite.swift/documentation/northwind/).
 
 
 ### Examples
 
-- [Northwind](https://55db091a-8471-447b-8f50-5dff4c1b14ac.github.io/NorthwindSQLite.swift/documentation/northwind/) Database:
+- [Northwind](https://Lighter-swift.github.io/NorthwindSQLite.swift/documentation/northwind/) Database:
     - [NorthwindWebAPI](Sources/NorthwindWebAPI/) (A server side Swift example
       exposing the DB as a JSON API endpoint, and providing a few pretty HTML
       pages showing data contained.)
     - [NorthwindSwiftUI](Sources/NorthwindSwiftUI/) (A SwiftUI example that lets
-      one browse the Northwind database. Uses the Lighter API in combination and
+      one browse the Northwind database. Uses the Lighter API in combination with
       its async/await supports.)
 - Custom database:
     - [Bodies](Sources/Bodies/) (A SwiftUI example which loads a list of solar
@@ -63,6 +63,7 @@ presumably any form of praise you can think of.
 
 **Want to support my work**?
 Buy an app:
+[Code for SQLite3](https://apps.apple.com/us/app/code-for-sqlite3/id1638111010),
 [Past for iChat](https://apps.apple.com/us/app/past-for-ichat/id1554897185),
 [SVG Shaper](https://apps.apple.com/us/app/svg-shaper-for-swiftui/id1566140414),
 [Shrugs](https://shrugs.app/),
