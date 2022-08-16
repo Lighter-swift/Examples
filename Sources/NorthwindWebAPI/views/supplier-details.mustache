@@ -1,0 +1,48 @@
+<table class="ui celled striped table">
+  <thead>
+    <tr><th colspan="2">
+      Supplier: {{supplier.companyName}}
+      (<i class="key icon"></i> {{supplier.id}})
+    </th></tr>
+  </thead>
+  <tbody>
+    {{#supplier.contactName}}
+      <tr>
+        <td class="collapsing">Contact</td>
+        <td>
+          {{supplier.contactName}}
+          {{#supplier.contactTitle}}({{supplier.contactTitle}}){{/}}
+        </td>
+      </tr>
+    {{/}}
+    
+    <tr>
+      <td class="collapsing">Address</td>
+      <td>
+        {{supplier.address}},
+        {{supplier.city}} {{supplier.postalCode}},
+        {{supplier.region}},
+        {{supplier.country}}
+      </td>
+    </tr>
+
+    {{#supplier.phone}}
+      <tr>
+        <td class="collapsing">Phone</td>
+        <td>{{supplier.phone}}</td>
+      </tr>
+    {{/}}
+    {{#supplier.fax}}
+      <tr>
+        <td class="collapsing">Fax</td>
+        <td>{{supplier.fax}}</td>
+      </tr>
+    {{/}}
+    {{#supplier.homePage}}
+      <tr>
+        <td class="collapsing">Home Page</td>
+        <td>{{supplier.homePage}}</td>
+      </tr>
+    {{/}}
+  </tbody>
+</table>

@@ -1,0 +1,80 @@
+{{> header}}
+
+<div class="ui breadcrumb">
+  <a class="section" href="../../">Home</a>
+  <div class="divider"> / </div>
+  <a class="section" href="../products.html">Products</a>
+  <div class="divider"> / </div>
+  
+  <!-- use keypath syntax -->
+  <div class="active section">{{product.productName}}</div>
+</div>
+
+<div class="ui message">
+  <div class="header">
+    Product Page
+  </div>
+  <p>
+    A small example page showing a product and fetching related information.
+  </p>
+</div>
+
+<table class="ui celled striped table">
+  <thead>
+    <tr><th colspan="2">{{product.productName}}</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="collapsing"><i class="key icon"></i></td>
+      <td>{{product.id}}</td>
+    </tr>
+    <tr>
+      <td class="collapsing">Name</i></td>
+      <td>{{product.productName}}</td>
+    </tr>
+    <tr>
+      <td class="collapsing">Price per Unit</i></td>
+      <td>${{product.unitPrice}}</td>
+    </tr>
+    <tr>
+      <td class="collapsing">Quantity per Unit</i></td>
+      <td>{{product.quantityPerUnit}}</td>
+    </tr>
+    <tr>
+      <td class="collapsing">Units in Stock</i></td>
+      <td>{{product.unitsInStock}}</td>
+    </tr>
+    <tr>
+      <td class="collapsing">Units on Order</i></td>
+      <td>{{product.unitsOnOrder}}</td>
+    </tr>
+    <tr>
+      <td class="collapsing">Reorder Level</i></td>
+      <td>{{product.reorderLevel}}</td>
+    </tr>
+    <tr>
+      <td class="collapsing">Discontinued</i></td>
+      <td>{{product.discontinued}}</td>
+    </tr>
+
+    <!-- This is showing the "category" relationship inline -->
+    <tr>
+      <td class="collapsing">
+        Category
+      </td>
+      <td>
+        {{#categoryPicture}}
+          <img class="ui top aligned tiny image rounded"
+               src="data:image/jpeg;base64,{{categoryPicture}}" />
+        {{/}}
+        <em>{{category.categoryName}}</em>:
+        {{category.description}}
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Embed the "supplier" info (a joined table) -->
+{{#supplier}}{{> supplier-details}}{{/supplier}}
+
+{{> footer}}

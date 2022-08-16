@@ -1,0 +1,25 @@
+<table class="ui celled striped table">
+  <thead>
+    <tr><th colspan="2">
+      Category: {{category.categoryName}}
+      (<i class="key icon"></i> {{category.id}})
+    </th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="collapsing">Description</td>
+      <td>
+        {{category.description}}
+      </td>
+    </tr>
+
+    {{#categoryPicture}}
+      <tr>
+        <td class="collapsing">Picture</td>
+        <td>
+          <img src="data:image/jpeg;base64,{{categoryPicture}}" />
+        </td>
+      </tr>
+    {{/}}
+  </tbody>
+</table>
