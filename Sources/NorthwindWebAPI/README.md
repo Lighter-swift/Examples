@@ -73,6 +73,10 @@ app // Those hook up the HTML pages/templates.
 app.listen(1337) // start server
 ```
 
+### Screenshots
+
+<img width="890" alt="MacroSample-Product-List" src="https://user-images.githubusercontent.com/7712892/184907723-f76691b2-a0bf-4c04-b866-55599603afa4.png">
+<img width="890" alt="Macro-Sample-Product-Detail" src="https://user-images.githubusercontent.com/7712892/184907762-cead2c35-1e80-49ce-a5c6-d3522d145411.png">
 
 ### Who
 
