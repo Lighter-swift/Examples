@@ -5,7 +5,7 @@
 
 Examples for the Lighter SQLite environment, SwiftUI and server side.
 
-Note: The examples requires Swift 5.7 / Xcode 14b for proper plugin support.
+Note: The examples require Swift 5.7 / Xcode 14b for proper plugin support.
 
 When embedding a package using Enlighter (like
 [NorthwindSQLite.swift](https://github.com/Lighter-swift/NorthwindSQLite.swift.git)),
