@@ -53,6 +53,22 @@ The Swift Northwind API: [Documentation](https://Lighter-swift.github.io/Northwi
 This example pulls in a lot of bigger dependencies. A real Lighter project can
 actually work w/ no external dependencies at all.
 
+### Screenshots
+
+#### Northwind SwiftUI
+
+<img width="1014" alt="Screenshot 2022-08-16 at 16 41 31" src="https://user-images.githubusercontent.com/7712892/184908144-22cf9a9a-7901-4815-9453-61d8602a093f.png">
+
+#### Northwind Web API
+
+<img width="890" alt="MacroSample-Product-List" src="https://user-images.githubusercontent.com/7712892/184907723-f76691b2-a0bf-4c04-b866-55599603afa4.png">
+<img width="890" alt="Macro-Sample-Product-Detail" src="https://user-images.githubusercontent.com/7712892/184907762-cead2c35-1e80-49ce-a5c6-d3522d145411.png">
+
+#### Solar Bodies
+
+<img width="534" alt="Screenshot 2022-08-12 at 16 05 09" src="https://user-images.githubusercontent.com/7712892/184907841-f0aec194-1b60-42c7-a300-561f3349e5ef.png">
+
+
 
 ### Who
 
