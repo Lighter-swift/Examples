@@ -136,6 +136,10 @@ struct ContentView: View {
 }
 ```
 
+### Screenshot
+
+<img width="534" alt="Screenshot 2022-08-12 at 16 05 09" src="https://user-images.githubusercontent.com/7712892/184907841-f0aec194-1b60-42c7-a300-561f3349e5ef.png">
+
 
 ### Who
 

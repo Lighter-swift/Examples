@@ -85,7 +85,7 @@ struct ContentView: View {
         }
         let result = try JSONDecoder().decode(Result.self, from: data)
         
-        // No we need to merge the results we have in the database with the
+        // Now we need to merge the results we have in the database with the
         // once we got from the web.
         // We don't actually compare the values, but just overwrite existing
         // records if they are still the same.

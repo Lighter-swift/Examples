@@ -25,6 +25,7 @@
 		E8224FD628A0073000246A1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8224FD428A0073000246A1F /* ContentView.swift */; };
 		E8224FDA28A0076E00246A1F /* AppDependencies in Frameworks */ = {isa = PBXBuildFile; productRef = E8224FD928A0076E00246A1F /* AppDependencies */; };
 		E8224FE128A05CB900246A1F /* ProductsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8224FE028A05CB900246A1F /* ProductsList.swift */; };
+		E86B87D728AD4DE400C5B588 /* Lighter in Frameworks */ = {isa = PBXBuildFile; productRef = E86B87D628AD4DE400C5B588 /* Lighter */; };
 		E87B410D28A3C40500576D8A /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B410C28A3C40500576D8A /* NavView.swift */; };
 		E87B411228A3C4B900576D8A /* NavVIewProductsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B411128A3C4B900576D8A /* NavVIewProductsList.swift */; };
 		E87B411428A3C58500576D8A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B411328A3C58500576D8A /* MainView.swift */; };
@@ -34,8 +35,6 @@
 		E87B412E28A3DCAD00576D8A /* BodiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B412C28A3DCAD00576D8A /* BodiesApp.swift */; };
 		E87B412F28A3DCAD00576D8A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B412D28A3DCAD00576D8A /* ContentView.swift */; };
 		E87D45FF28A3C341008E04EA /* NavViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87D45FE28A3C341008E04EA /* NavViewMain.swift */; };
-		E8AF70C228A3DD80008444B2 /* Lighter in Frameworks */ = {isa = PBXBuildFile; productRef = E8AF70C128A3DD80008444B2 /* Lighter */; };
-		E8AF70C828A3DDA7008444B2 /* Lighter in Frameworks */ = {isa = PBXBuildFile; productRef = E8AF70C728A3DDA7008444B2 /* Lighter */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -103,7 +102,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8AF70C228A3DD80008444B2 /* Lighter in Frameworks */,
 				E8224FBE28A0066800246A1F /* WebDependencies in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8AF70C828A3DDA7008444B2 /* Lighter in Frameworks */,
+				E86B87D728AD4DE400C5B588 /* Lighter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +295,6 @@
 			name = NorthwindWebAPI;
 			packageProductDependencies = (
 				E8224FBD28A0066800246A1F /* WebDependencies */,
-				E8AF70C128A3DD80008444B2 /* Lighter */,
 			);
 			productName = NorthwindWebAPI;
 			productReference = E8224FA328A0063A00246A1F /* NorthwindWebAPI */;
@@ -340,7 +337,7 @@
 			);
 			name = Bodies;
 			packageProductDependencies = (
-				E8AF70C728A3DDA7008444B2 /* Lighter */,
+				E86B87D628AD4DE400C5B588 /* Lighter */,
 			);
 			productName = Bodies;
 			productReference = E87B411C28A3DC6500576D8A /* Bodies.app */;
@@ -377,7 +374,7 @@
 			);
 			mainGroup = E8224F8228A005CF00246A1F;
 			packageReferences = (
-				E8AF70C028A3DD80008444B2 /* XCRemoteSwiftPackageReference "Lighter" */,
+				E870FE9B28AD4D5700E3FB5A /* XCRemoteSwiftPackageReference "Lighter" */,
 			);
 			productRefGroup = E8224F8C28A005CF00246A1F /* Products */;
 			projectDirPath = "";
@@ -797,6 +794,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E870FE9B28AD4D5700E3FB5A /* XCRemoteSwiftPackageReference "Lighter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Lighter-swift/Lighter.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
 		E8AF70C028A3DD80008444B2 /* XCRemoteSwiftPackageReference "Lighter" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:55DB091A-8471-447B-8F50-5DFF4C1B14AC/Lighter.git";
@@ -824,9 +829,9 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = AppDependencies;
 		};
-		E8AF70C128A3DD80008444B2 /* Lighter */ = {
+		E86B87D628AD4DE400C5B588 /* Lighter */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E8AF70C028A3DD80008444B2 /* XCRemoteSwiftPackageReference "Lighter" */;
+			package = E870FE9B28AD4D5700E3FB5A /* XCRemoteSwiftPackageReference "Lighter" */;
 			productName = Lighter;
 		};
 		E8AF70C328A3DD9C008444B2 /* Enlighter */ = {
@@ -835,11 +840,6 @@
 			productName = "plugin:Enlighter";
 		};
 		E8AF70C528A3DDA3008444B2 /* Lighter */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E8AF70C028A3DD80008444B2 /* XCRemoteSwiftPackageReference "Lighter" */;
-			productName = Lighter;
-		};
-		E8AF70C728A3DDA7008444B2 /* Lighter */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E8AF70C028A3DD80008444B2 /* XCRemoteSwiftPackageReference "Lighter" */;
 			productName = Lighter;
