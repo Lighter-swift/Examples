@@ -7,10 +7,23 @@ struct BodiesApp: App {
     // "overwrite" can be used during development to get a clean database on
     // each run.
     #if DEBUG
-    let database = try! BodiesDB.bootstrap(overwrite: true)
+    let database =
+        try! BodiesDB.bootstrap(into: .cachesDirectory, overwrite: true)
     #else
-    let database = try! BodiesDB.bootstrap()
+    let database = try! BodiesDB.bootstrap(into: .cachesDirectory)
     #endif
+    
+    init() {
+        // Check whether a migration is necessary.
+        let schemaVersion =
+            try! database.get(pragma: "user_version", as: Int.self)
+        if schemaVersion != BodiesDB.userVersion {
+            try! database.fetch("UPDATE") { _, _ in }
+            
+            print("Dumping cache, the version is outdated.")
+            _ = try! BodiesDB.bootstrap(overwrite: true)
+        }
+    }
   
     var body: some Scene {
         WindowGroup {
