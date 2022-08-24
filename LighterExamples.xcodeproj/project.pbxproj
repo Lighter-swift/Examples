@@ -799,7 +799,7 @@
 			repositoryURL = "https://github.com/Lighter-swift/Lighter.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.4;
+				minimumVersion = 1.0.8;
 			};
 		};
 		E8AF70C028A3DD80008444B2 /* XCRemoteSwiftPackageReference "Lighter" */ = {
