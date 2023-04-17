@@ -20,7 +20,7 @@ let package = Package(
              from: "1.0.8"),
     
     .package(url: "https://github.com/Macro-swift/MacroExpress.git",
-             from: "1.0.0"),
+             from: "1.0.2"),
   
     .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0")
   ],

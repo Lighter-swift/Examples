@@ -25,7 +25,7 @@ func products(req: IncomingMessage, res: ServerResponse, next: Next) throws {
     "limit"          : limit,
     "lowerLimit"     : (limit - 10) > 1 ? (limit - 10) : 1,
     "higherLimit"    : limit + limit
-  ])
+  ] as [String : Any])
 }
 
 /// This is the endpoint which drives the page for a single product.

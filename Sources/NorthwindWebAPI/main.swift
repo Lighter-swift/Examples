@@ -18,7 +18,7 @@ app.set("views", __dirname() + "/views")
 
 // This is an explicit registration for a specific record fetch.
 // curl http://localhost:1337/api/products | jq .
-app.get("/api/products") { _, res, _ in
+app.get("/api/products") { _, res in
   res.send(try db.products.fetch())
 }
 
@@ -32,7 +32,7 @@ app
   .get("/products.html", products)
   .get("/products/:id/",  product)
 
-app.get("/") { _, res, _ in
+app.get("/") { _, res in
   res.render("index")
 }
 
