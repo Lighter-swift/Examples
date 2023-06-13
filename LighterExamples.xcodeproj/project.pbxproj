@@ -94,7 +94,6 @@
 		E87B412C28A3DCAD00576D8A /* BodiesApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodiesApp.swift; sourceTree = "<group>"; };
 		E87B412D28A3DCAD00576D8A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E87D45FE28A3C341008E04EA /* NavViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewMain.swift; sourceTree = "<group>"; };
-		E8924C3129DA2873008BD781 /* Lighter */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Lighter; path = ../Lighter; sourceTree = "<group>"; };
 		E8AF70C928A3DDE9008444B2 /* BodiesDB-001.sql */ = {isa = PBXFileReference; lastKnownFileType = text; path = "BodiesDB-001.sql"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,7 +128,6 @@
 		E8224F8228A005CF00246A1F = {
 			isa = PBXGroup;
 			children = (
-				E8924C3129DA2873008BD781 /* Lighter */,
 				E8224FDB28A0557000246A1F /* README.md */,
 				E8224FDD28A0557000246A1F /* LICENSE */,
 				E8224FDC28A0557000246A1F /* CONTRIBUTING.md */,
@@ -353,7 +351,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					E8224FA228A0063A00246A1F = {
 						CreatedOnToolsVersion = 14.0;
@@ -508,9 +506,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -566,9 +566,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -588,6 +590,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -599,6 +602,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -614,6 +618,7 @@
 				CODE_SIGN_ENTITLEMENTS = NorthwindSwiftUI/NorthwindSwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"NorthwindSwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -650,6 +655,7 @@
 				CODE_SIGN_ENTITLEMENTS = NorthwindSwiftUI/NorthwindSwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"NorthwindSwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -686,6 +692,7 @@
 				CODE_SIGN_ENTITLEMENTS = Bodies/Bodies.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Bodies/Preview Content\"";
 				DEVELOPMENT_TEAM = 4GXF3JAMM4;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -724,6 +731,7 @@
 				CODE_SIGN_ENTITLEMENTS = Bodies/Bodies.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Bodies/Preview Content\"";
 				DEVELOPMENT_TEAM = 4GXF3JAMM4;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -801,7 +809,7 @@
 			repositoryURL = "https://github.com/Lighter-swift/Lighter.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.18;
+				minimumVersion = 1.0.24;
 			};
 		};
 		E8AF70C028A3DD80008444B2 /* XCRemoteSwiftPackageReference "Lighter" */ = {
