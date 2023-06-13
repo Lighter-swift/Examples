@@ -57,7 +57,7 @@ let db  = Northwind.module!
 let app = express()
 
 app
-  .get("/products") { _, res, _ in
+  .get("/products") { _, res in
     res.send(try db.products.fetch())
   }
   .listen(1337)

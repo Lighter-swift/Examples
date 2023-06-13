@@ -58,7 +58,7 @@ let app = express()
 
 // Map `/api/products` to a handler which fetches all "products" from the DB.
 // Access using: curl http://localhost:1337/api/products | jq .
-app.get("/api/products") { _, res, _ in
+app.get("/api/products") { _, res in
   res.send(try db.products.fetch())
 }
 
@@ -68,7 +68,7 @@ app.get(db, prefix: "/api/")
 app // Those hook up the HTML pages/templates.
   .get("/products.html", products)
   .get("/products/:id/", product)
-  .get("/") { _, res, _ in res.render("index") }
+  .get("/") { _, res in res.render("index") }
 
 app.listen(1337) // start server
 ```
