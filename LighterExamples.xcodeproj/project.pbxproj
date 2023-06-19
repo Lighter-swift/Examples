@@ -91,8 +91,8 @@
 		E87B412228A3DC6500576D8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E87B412428A3DC6500576D8A /* Bodies.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bodies.entitlements; sourceTree = "<group>"; };
 		E87B412628A3DC6500576D8A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E87B412C28A3DCAD00576D8A /* BodiesApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodiesApp.swift; sourceTree = "<group>"; };
-		E87B412D28A3DCAD00576D8A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E87B412C28A3DCAD00576D8A /* BodiesApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = BodiesApp.swift; sourceTree = "<group>"; };
+		E87B412D28A3DCAD00576D8A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E87D45FE28A3C341008E04EA /* NavViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewMain.swift; sourceTree = "<group>"; };
 		E8AF70C928A3DDE9008444B2 /* BodiesDB-001.sql */ = {isa = PBXFileReference; lastKnownFileType = text; path = "BodiesDB-001.sql"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,7 +138,7 @@
 				E8224F8C28A005CF00246A1F /* Products */,
 				E8224FBC28A0066800246A1F /* Frameworks */,
 			);
-			indentWidth = 4;
+			indentWidth = 2;
 			sourceTree = "<group>";
 		};
 		E8224F8C28A005CF00246A1F /* Products */ = {

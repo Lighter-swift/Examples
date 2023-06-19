@@ -45,6 +45,9 @@ struct MainView: View {
           case .products:
             ProductsList(products: $products,
                          selectedProduct: $selectedProductID)
+              #if os(macOS)
+                .frame(minWidth: 274) // otherwise overlaps on macOS 13
+              #endif
           
           case .none:
             Text("No section is selected")
