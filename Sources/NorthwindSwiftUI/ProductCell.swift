@@ -46,29 +46,4 @@ struct ProductCell: View {
     }
     return text
   }
-
-  @ViewBuilder var productDetails : some View {
-    HStack(spacing: 0) {
-      Text(product.unitPrice ?? 0, format: .currency(code: "USD"))
-        
-      if unitsInStock > 0 {
-        Text(", \(unitsInStock) in stock")
-        if product.discontinued != "0" {
-          Text(", ") +
-          Text("discontinued").foregroundColor(.red)
-        }
-      }
-      else if product.discontinued != "0" {
-        Text(", ") +
-        Text("discontinued").foregroundColor(.red)
-      }
-      else {
-        Text(", ") +
-        Text("out of stock").foregroundColor(.red)
-        if let ordered = product.unitsOnOrder, ordered > 0 {
-          Text(", ordered \(ordered)")
-        }
-      }
-    }
-  }
 }
