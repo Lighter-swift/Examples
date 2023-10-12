@@ -11,9 +11,9 @@ var package = Package(
   ],
   
   dependencies: [
-    .package(url: "https://github.com/Lighter-swift/Lighter.git", from: "1.0.24"),
-    .package(url: "https://github.com/Lighter-swift/NorthwindSQLite.swift.git",
-             from: "1.0.10"),
+    .package(url: "https://github.com/Lighter-swift/Lighter.git", from: "1.0.30"),
+    .package(url: "https://github.com/Northwind-swift/NorthwindSQLite.swift.git",
+             from: "1.0.14"),
              
     .package(url: "https://github.com/Macro-swift/MacroExpress.git",
              from: "1.0.2"),

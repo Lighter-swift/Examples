@@ -58,6 +58,7 @@
 		E81B195A28A0782D003A0F1C /* SupplierForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplierForm.swift; sourceTree = "<group>"; };
 		E81B195C28A07836003A0F1C /* CategoryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryInfo.swift; sourceTree = "<group>"; };
 		E81B195E28A078B8003A0F1C /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		E81D692B28CCCA5D004F5E26 /* Lighter */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Lighter; path = ../Lighter; sourceTree = "<group>"; };
 		E8224F9D28A0060F00246A1F /* AppLogic */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AppLogic; sourceTree = "<group>"; };
 		E8224FA328A0063A00246A1F /* NorthwindWebAPI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NorthwindWebAPI; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8224FAB28A0065C00246A1F /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
@@ -75,7 +76,7 @@
 		E8224FC928A0071100246A1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8224FCB28A0071100246A1F /* NorthwindSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NorthwindSwiftUI.entitlements; sourceTree = "<group>"; };
 		E8224FCD28A0071100246A1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E8224FD328A0073000246A1F /* NorthwindApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NorthwindApp.swift; sourceTree = "<group>"; };
+		E8224FD328A0073000246A1F /* NorthwindApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = NorthwindApp.swift; sourceTree = "<group>"; };
 		E8224FD428A0073000246A1F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E8224FDB28A0557000246A1F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E8224FDC28A0557000246A1F /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
@@ -128,6 +129,7 @@
 		E8224F8228A005CF00246A1F = {
 			isa = PBXGroup;
 			children = (
+				E81D692B28CCCA5D004F5E26 /* Lighter */,
 				E8224FDB28A0557000246A1F /* README.md */,
 				E8224FDD28A0557000246A1F /* LICENSE */,
 				E8224FDC28A0557000246A1F /* CONTRIBUTING.md */,
