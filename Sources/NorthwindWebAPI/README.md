@@ -46,7 +46,7 @@ The example in a nutshell:
 ```swift
 #!/usr/bin/swift sh
 import MacroExpress // @Macro-swift
-import Northwind    // @Lighter-swift/NorthwindSQLite.swift
+import Northwind    // @Northwind-swift/NorthwindSQLite.swift
 
 // Get a handle to the database
 let db  = Northwind.module!

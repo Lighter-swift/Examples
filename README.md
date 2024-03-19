@@ -8,7 +8,7 @@ Examples for the Lighter SQLite environment, SwiftUI and server side.
 Note: The examples require Swift 5.7 / Xcode 14b for proper plugin support.
 
 When embedding a package using Enlighter (like
-[NorthwindSQLite.swift](https://github.com/Lighter-swift/NorthwindSQLite.swift.git)),
+[NorthwindSQLite.swift](https://github.com/Northwind-swift/NorthwindSQLite.swift.git)),
 [a local package](https://developer.apple.com/documentation/xcode/organizing-your-code-with-local-packages) 
 seems to be required w/ the Xcode 14 beta (3...5).
 Otherwise the Swift package plugins do not seem to run.
@@ -22,7 +22,7 @@ help.
 The Northwind database is a common database example that has been ported
 to SQLite. 
 Lighter provides a Swift version of that in the
-[NorthwindSQLite.swift](https://github.com/Lighter-swift/NorthwindSQLite.swift)
+[NorthwindSQLite.swift](https://github.com/Northwind-swift/NorthwindSQLite.swift)
 repository.
 
 > Note: The particular SQLite version of the Northwind database is quite 
@@ -31,7 +31,7 @@ repository.
 > That actually makes it a good example on how to deal with such databases in
 > Lighter.
 
-The Swift Northwind API: [Documentation](https://Lighter-swift.github.io/NorthwindSQLite.swift/documentation/northwind/).
+The Swift Northwind API: [Documentation](https://Northwind-swift.github.io/NorthwindSQLite.swift/documentation/northwind/).
 
 
 ### Examples

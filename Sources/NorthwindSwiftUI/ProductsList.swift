@@ -37,13 +37,17 @@ struct ProductsList: View {
           )
         }
         
-        #if !os(macOS)
-        if horizontalSizeClass != .compact {
-          // Pre-select the first match if none is selected
+        // Pre-select the first match if none is selected.
+        #if os(macOS)
           if selectedProduct == nil, let product = products.first {
             selectedProduct = product.id
           }
-        }
+        #else
+          if horizontalSizeClass != .compact { // this waits for the tap
+            if selectedProduct == nil, let product = products.first {
+              selectedProduct = product.id
+            }
+          }
         #endif
       }
       catch { // really, do proper error handling :-)

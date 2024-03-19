@@ -1,6 +1,7 @@
 import SwiftUI
 import Northwind
 import Lighter
+import SQLite3
 
 /// Global application state. A good place to setup the database object.
 @main
@@ -9,6 +10,7 @@ struct NorthwindApp: App {
   let database = (try? Northwind.bootstrap(
     copying: Northwind.module.connectionHandler.url
   )) ?? .module!
+    
   
   var body: some Scene {
     WindowGroup {

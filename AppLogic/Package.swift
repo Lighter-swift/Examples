@@ -15,9 +15,9 @@ let package = Package(
   // The dependencies.
   dependencies: [
     .package(url: "https://github.com/Lighter-swift/Lighter.git",
-             from: "1.0.24"),
-    .package(url: "https://github.com/Lighter-swift/NorthwindSQLite.swift.git",
-             from: "1.0.10"),
+             from: "1.0.32"),
+    .package(url: "https://github.com/Northwind-swift/NorthwindSQLite.swift.git",
+             from: "1.0.16"),
     
     .package(url: "https://github.com/Macro-swift/MacroExpress.git",
              from: "1.0.2"),

@@ -18,32 +18,32 @@ struct ProductCell: View {
         VStack(alignment: .leading) {
           Text(verbatim: product.productName)
             .font(.headline)
-          
-          HStack(spacing: 0) {
-            Text(product.unitPrice ?? 0, format: .currency(code: "USD"))
-            if unitsInStock > 0 {
-              Text(", \(unitsInStock) in stock")
-            }
-            else if product.discontinued != "0" {
-              Text(", ") +
-              Text("discontinued").foregroundColor(.red)
-            }
-            else {
-              Text(", ") +
-              Text("out of stock.").foregroundColor(.red)
-              if let ordered = product.unitsOnOrder, ordered > 0 {
-                Text(", ordered \(ordered)")
-              }
-            }
-          }
-          
-          if unitsInStock > 0 && product.discontinued != "0" {
-            Text("Discontinued")
-              .foregroundColor(.red)
-          }
+
+          detailText
         }
       },
       icon: { Image(systemName: "p.circle") }
     )
+  }
+    
+  var detailText : Text {
+    var text = Text(product.unitPrice ?? 0, format: .currency(code: "USD"))
+      
+    if unitsInStock > 0 {
+      text = text + Text(", \(unitsInStock) in stock")
+    }
+    else {
+      text = text + Text(", ")
+      text = text + Text("out of stock").foregroundColor(.red)
+      if let ordered = product.unitsOnOrder, ordered > 0 {
+        text = text + Text(", ordered \(ordered)")
+      }
+    }
+    
+    if product.discontinued != "0" {
+      text = text + Text(", ")
+      text = text + Text("discontinued").foregroundColor(.red)
+    }
+    return text
   }
 }

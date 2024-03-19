@@ -2,7 +2,7 @@ import SwiftUI
 import Northwind
 
 @available(iOS 16.0, macOS 13, *)
-extension MainView: View {
+extension MainView {
   
   struct Sidebar: View {
     

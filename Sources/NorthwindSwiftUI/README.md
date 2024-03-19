@@ -14,7 +14,7 @@ but keeps everything in local states.
 
 Note: The example requires Swift 5.7 / Xcode 14b for proper plugin support.
 
-Northwind API: [Documentation](https://55db091a-8471-447b-8f50-5dff4c1b14ac.github.io/NorthwindSQLite.swift/documentation/northwind/)
+Northwind API: [Documentation](https://Northwind-sqlite.github.io/NorthwindSQLite.swift/documentation/northwind/)
 
 
 
