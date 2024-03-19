@@ -27,7 +27,7 @@
 		E8224FE128A05CB900246A1F /* ProductsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8224FE028A05CB900246A1F /* ProductsList.swift */; };
 		E86B87D728AD4DE400C5B588 /* Lighter in Frameworks */ = {isa = PBXBuildFile; productRef = E86B87D628AD4DE400C5B588 /* Lighter */; };
 		E87B410D28A3C40500576D8A /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B410C28A3C40500576D8A /* NavView.swift */; };
-		E87B411228A3C4B900576D8A /* NavVIewProductsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B411128A3C4B900576D8A /* NavVIewProductsList.swift */; };
+		E87B411228A3C4B900576D8A /* NavViewProductsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B411128A3C4B900576D8A /* NavViewProductsList.swift */; };
 		E87B411428A3C58500576D8A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B411328A3C58500576D8A /* MainView.swift */; };
 		E87B411628A3C7EB00576D8A /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B411528A3C7EB00576D8A /* Sidebar.swift */; };
 		E87B412328A3DC6500576D8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E87B412228A3DC6500576D8A /* Assets.xcassets */; };
@@ -84,7 +84,7 @@
 		E8224FE028A05CB900246A1F /* ProductsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsList.swift; sourceTree = "<group>"; };
 		E86867D428A3F43300117E0E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E87B410C28A3C40500576D8A /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
-		E87B411128A3C4B900576D8A /* NavVIewProductsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavVIewProductsList.swift; sourceTree = "<group>"; };
+		E87B411128A3C4B900576D8A /* NavViewProductsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewProductsList.swift; sourceTree = "<group>"; };
 		E87B411328A3C58500576D8A /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E87B411528A3C7EB00576D8A /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
 		E87B411728A3CF9D00576D8A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -273,7 +273,7 @@
 				E87B410C28A3C40500576D8A /* NavView.swift */,
 				E87D45FE28A3C341008E04EA /* NavViewMain.swift */,
 				E81B195228A065A6003A0F1C /* NavViewSidebar.swift */,
-				E87B411128A3C4B900576D8A /* NavVIewProductsList.swift */,
+				E87B411128A3C4B900576D8A /* NavViewProductsList.swift */,
 			);
 			path = NavigationViewBasedUI;
 			sourceTree = "<group>";
@@ -434,7 +434,7 @@
 				E87B411428A3C58500576D8A /* MainView.swift in Sources */,
 				E81B195728A07563003A0F1C /* ProductForm.swift in Sources */,
 				E87D45FF28A3C341008E04EA /* NavViewMain.swift in Sources */,
-				E87B411228A3C4B900576D8A /* NavVIewProductsList.swift in Sources */,
+				E87B411228A3C4B900576D8A /* NavViewProductsList.swift in Sources */,
 				E8224FE128A05CB900246A1F /* ProductsList.swift in Sources */,
 				E81B195128A06525003A0F1C /* ProductCell.swift in Sources */,
 				E81B195928A0769D003A0F1C /* Ambiguities.swift in Sources */,
@@ -811,7 +811,7 @@
 			repositoryURL = "https://github.com/Lighter-swift/Lighter.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.24;
+				minimumVersion = 1.0.32;
 			};
 		};
 		E8AF70C028A3DD80008444B2 /* XCRemoteSwiftPackageReference "Lighter" */ = {
