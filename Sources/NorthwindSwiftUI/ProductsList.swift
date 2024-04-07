@@ -30,6 +30,7 @@ struct ProductsList: View {
       do {
         // Here we are using a query builder to filter by column. Alternatively
         // one can use an arbitrary Swift closure using `filter`.
+        let searchString = searchString // strict concurrency
         products = try await database.products.fetch(orderBy: \.productName) {
           $0.productName.contains(
             searchString.trimmingCharacters(in: .whitespacesAndNewlines),

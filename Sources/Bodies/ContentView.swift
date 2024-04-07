@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+@MainActor
 struct ContentView: View {
     
     let database : BodiesDB
@@ -17,8 +18,8 @@ struct ContentView: View {
     /// The current search string.
     @State private var searchString = ""
     
-    @MainActor // to work on the `@State` properties, we need to be on main
     func loadFromCache() async {
+        let searchString = searchString // do not capture @State in concurrency
         bodies = try! await database.solarBodies.fetch(orderBy: \.englishName) {
             $0.englishName.contains(searchString, caseInsensitive: true)
         }
@@ -77,7 +78,7 @@ struct ContentView: View {
         
         // Fetch raw data from endpoint.
         let ( data, _ ) = try await URLSession.shared.data(from: url)
-        
+
         // Decode the JSON. The actual JSON struct doesn't contain the
         // bodies at the root, so we need a little helper struct:
         struct Result: Decodable {
@@ -115,5 +116,14 @@ struct ContentView: View {
         
         // Our sync worked, we should now have the records in the database.
         await loadFromCache()
+    }
+}
+
+extension URLSession {
+    
+    func data(from url: URL) async throws -> ( Data, URLResponse ) {
+        // This solely exist to silence a concurrency warning triggered by
+        // the default `delegate` parameter of `data(from:delegate:)`.
+        try await data(from: url, delegate: nil)
     }
 }
