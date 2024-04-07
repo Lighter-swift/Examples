@@ -8,6 +8,7 @@ import Northwind
  * This also demos fetching of related records (the product supplier and the
  * product category).
  */
+@MainActor
 struct ProductPage: View {
 
   /// The database is passed down by the Application struct in the environment.
@@ -39,7 +40,9 @@ struct ProductPage: View {
       // features of Lighter/Enlighter.
       // Those can be run concurrently (even though it doesn't give much here,
       // for demo purposes only). We can use `async let` for this.
-      async let supplier = database.suppliers.find(for: product)
+      let product  = product  // for strict concurrency
+      let database = database
+      async let supplier = database.suppliers .find(for: product)
       async let category = database.categories.find(for: product)
       ( self.supplier, self.category ) = try await ( supplier, category )
     }
@@ -57,6 +60,8 @@ struct ProductPage: View {
     do {
       // While not required, it is always a good idea to update in an
       // transaction as this ensures order and consistency.
+      let product  = product // strict concurrency
+      let supplier = supplier
       try await database.transaction { tx in
         
         try tx.update(product)

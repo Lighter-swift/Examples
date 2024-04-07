@@ -61,5 +61,6 @@ final class EmptyStringIsNullFormatter: Formatter {
 }
 
 extension Formatter {
+  @MainActor
   static let emptyIsNull = EmptyStringIsNullFormatter()
 }
