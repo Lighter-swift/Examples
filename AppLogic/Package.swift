@@ -15,12 +15,15 @@ let package = Package(
   // The dependencies.
   dependencies: [
     .package(url: "https://github.com/Lighter-swift/Lighter.git",
-             from: "1.2.4"),
+             from: "1.4.12"),
     .package(url: "https://github.com/Northwind-swift/NorthwindSQLite.swift.git",
              from: "1.2.4"),
-    
+
+    // Web
+    .package(url: "https://github.com/Macro-swift/Macro.git",
+             from: "1.0.8"),
     .package(url: "https://github.com/Macro-swift/MacroExpress.git",
-             from: "1.0.2"),
+             from: "1.0.9"),
   
     .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0")
   ],
@@ -28,6 +31,7 @@ let package = Package(
   // Our own targets, those are linked by the Xcode project targets.
   targets: [
     .target(name: "WebDependencies", dependencies: [
+      "Macro",
       "MacroExpress",
       .product(name: "Northwind", package: "NorthwindSQLite.swift")
     ]),

@@ -11,12 +11,13 @@ var package = Package(
   ],
   
   dependencies: [
-    .package(url: "https://github.com/Lighter-swift/Lighter.git", from: "1.0.30"),
+    .package(url: "https://github.com/Lighter-swift/Lighter.git",
+             from: "1.4.12"),
     .package(url: "https://github.com/Northwind-swift/NorthwindSQLite.swift.git",
-             from: "1.0.14"),
+             from: "1.2.4"),
              
     .package(url: "https://github.com/Macro-swift/MacroExpress.git",
-             from: "1.0.2"),
+             from: "1.0.8"),
 
     .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0")
   ],

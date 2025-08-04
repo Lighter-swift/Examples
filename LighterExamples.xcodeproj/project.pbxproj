@@ -94,6 +94,7 @@
 		E87B412C28A3DCAD00576D8A /* BodiesApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = BodiesApp.swift; sourceTree = "<group>"; };
 		E87B412D28A3DCAD00576D8A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E87D45FE28A3C341008E04EA /* NavViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewMain.swift; sourceTree = "<group>"; };
+		E896BEA02E41151900CB449C /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		E8AF70C928A3DDE9008444B2 /* BodiesDB-001.sql */ = {isa = PBXFileReference; lastKnownFileType = text; path = "BodiesDB-001.sql"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +132,7 @@
 				E8224FDB28A0557000246A1F /* README.md */,
 				E8224FDD28A0557000246A1F /* LICENSE */,
 				E8224FDC28A0557000246A1F /* CONTRIBUTING.md */,
+				E896BEA02E41151900CB449C /* Package.swift */,
 				E8224F9E28A0061600246A1F /* Sources */,
 				E8224F9D28A0060F00246A1F /* AppLogic */,
 				E8224FC428A0071000246A1F /* NorthwindSwiftUI */,
