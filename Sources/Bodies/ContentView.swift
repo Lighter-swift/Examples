@@ -75,9 +75,12 @@ struct ContentView: View {
     
     private func fetchAndUpdateCache() async throws {
         let url = URL(string: "https://api.le-systeme-solaire.net/rest/bodies")!
+        var req = URLRequest(url: url)
+        req.setValue("Bearer 57f3f52a-25bb-4055-94c9-aec2d6cffb46",
+                     forHTTPHeaderField: "Authorization")
         
         // Fetch raw data from endpoint.
-        let ( data, _ ) = try await URLSession.shared.data(from: url)
+        let ( data, _ ) = try await URLSession.shared.data(for: req)
 
         // Decode the JSON. The actual JSON struct doesn't contain the
         // bodies at the root, so we need a little helper struct:

@@ -6,6 +6,24 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		E87BBD472D413D08007A1D6C /* Build All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E87BBD4A2D413D08007A1D6C /* Build configuration list for PBXAggregateTarget "Build All" */;
+			buildPhases = (
+			);
+			dependencies = (
+				E87BBD4C2D413D0F007A1D6C /* PBXTargetDependency */,
+				E87BBD4E2D413D0F007A1D6C /* PBXTargetDependency */,
+				E87BBD502D413D0F007A1D6C /* PBXTargetDependency */,
+			);
+			name = "Build All";
+			packageProductDependencies = (
+			);
+			productName = "Build All";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		E81B195128A06525003A0F1C /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B195028A06525003A0F1C /* ProductCell.swift */; };
 		E81B195328A065A6003A0F1C /* NavViewSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B195228A065A6003A0F1C /* NavViewSidebar.swift */; };
@@ -36,6 +54,30 @@
 		E87B412F28A3DCAD00576D8A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B412D28A3DCAD00576D8A /* ContentView.swift */; };
 		E87D45FF28A3C341008E04EA /* NavViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87D45FE28A3C341008E04EA /* NavViewMain.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E87BBD4B2D413D0F007A1D6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8224F8328A005CF00246A1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E87B411B28A3DC6500576D8A;
+			remoteInfo = Bodies;
+		};
+		E87BBD4D2D413D0F007A1D6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8224F8328A005CF00246A1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8224FC228A0071000246A1F;
+			remoteInfo = NorthwindSwiftUI;
+		};
+		E87BBD4F2D413D0F007A1D6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8224F8328A005CF00246A1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8224FA228A0063A00246A1F;
+			remoteInfo = NorthwindWebAPI;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		E8224FA128A0063A00246A1F /* CopyFiles */ = {
@@ -364,6 +406,9 @@
 					E87B411B28A3DC6500576D8A = {
 						CreatedOnToolsVersion = 14.0;
 					};
+					E87BBD472D413D08007A1D6C = {
+						CreatedOnToolsVersion = 16.2;
+					};
 				};
 			};
 			buildConfigurationList = E8224F8628A005CF00246A1F /* Build configuration list for PBXProject "LighterExamples" */;
@@ -385,6 +430,7 @@
 				E8224FA228A0063A00246A1F /* NorthwindWebAPI */,
 				E8224FC228A0071000246A1F /* NorthwindSwiftUI */,
 				E87B411B28A3DC6500576D8A /* Bodies */,
+				E87BBD472D413D08007A1D6C /* Build All */,
 			);
 		};
 /* End PBXProject section */
@@ -463,6 +509,21 @@
 		E8224FD828A0076900246A1F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = E8224FD728A0076900246A1F /* AppDependencies */;
+		};
+		E87BBD4C2D413D0F007A1D6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E87B411B28A3DC6500576D8A /* Bodies */;
+			targetProxy = E87BBD4B2D413D0F007A1D6C /* PBXContainerItemProxy */;
+		};
+		E87BBD4E2D413D0F007A1D6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8224FC228A0071000246A1F /* NorthwindSwiftUI */;
+			targetProxy = E87BBD4D2D413D0F007A1D6C /* PBXContainerItemProxy */;
+		};
+		E87BBD502D413D0F007A1D6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8224FA228A0063A00246A1F /* NorthwindWebAPI */;
+			targetProxy = E87BBD4F2D413D0F007A1D6C /* PBXContainerItemProxy */;
 		};
 		E8AF70C428A3DD9C008444B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -768,6 +829,24 @@
 			};
 			name = Release;
 		};
+		E87BBD482D413D08007A1D6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GXF3JAMM4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E87BBD492D413D08007A1D6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GXF3JAMM4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -803,6 +882,15 @@
 			buildConfigurations = (
 				E87B412828A3DC6500576D8A /* Debug */,
 				E87B412928A3DC6500576D8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E87BBD4A2D413D08007A1D6C /* Build configuration list for PBXAggregateTarget "Build All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E87BBD482D413D08007A1D6C /* Debug */,
+				E87BBD492D413D08007A1D6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
